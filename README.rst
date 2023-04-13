@@ -25,7 +25,7 @@ To use qEOM-UCC/Davidson:
 
 PyPI releases soon to be available.
 
-The formalism of qEOM/Davidson is demonstrated in the `paper <https://github.com/qchemsoftware/OpenFermion-QChem/blob/main/examples/Openfermion-Qchem.ipynb>`__. Users can find the tutorial at the `ipython notebook <https://github.com/qchemsoftware/OpenFermion-QChem/blob/main/examples/OpenFermion-QCHEM_v1.0.pdf>`__.
+The formalism of qEOM/Davidson is demonstrated in the `paper <https://github.com/qchemsoftware/OpenFermion-QChem/blob/main/examples/Openfermion-Qchem.ipynb>`__. Users can find the data at the `ipython notebook <https://github.com/qchemsoftware/OpenFermion-QChem/blob/main/examples/OpenFermion-QCHEM_v1.0.pdf>`__.
 
 Authors
 -------
