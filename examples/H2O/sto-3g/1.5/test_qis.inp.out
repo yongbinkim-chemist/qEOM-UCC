@@ -1,0 +1,2078 @@
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 5.4 (devel), Q-Chem, Inc., Pleasanton, CA (2021)
+
+ E. Epifanovsky,  A. T. B. Gilbert,  Xintian Feng,  Joonho Lee,  Yuezhi Mao,  
+ N. Mardirossian,  P. Pokhilko,  A. White,  M. Wormit,  M. P. Coons,  
+ A. L. Dempwolff,  Zhengting Gan,  D. Hait,  P. R. Horn,  L. D. Jacobson,  
+ I. Kaliman,  J. Kussmann,  A. W. Lange,  Ka Un Lao,  D. S. Levine,  Jie Liu,  
+ S. C. McKenzie,  A. F. Morrison,  K. Nanda,  F. Plasser,  D. R. Rehn,  
+ M. L. Vidal,  Zhi-Qiang You,  Ying Zhu,  B. Alam,  B. Albrecht,  
+ A. Aldossary,  E. Alguire,  J. H. Andersen,  D. Barton,  K. Begam,  A. Behn,  
+ Y. A. Bernard,  E. J. Berquist,  H. Burton,  A. Carreras,  K. Carter-Fenk,  
+ R. Chakraborty,  A. D. Chien,  K. D. Closser,  V. Cofer-Shabica,  
+ S. Dasgupta,  Jia Deng,  M. de Wergifosse,  M. Diedenhofen,  Hainam Do,  
+ S. Ehlert,  Po-Tung Fang,  S. Fatehi,  Qingguo Feng,  T. Friedhoff,  
+ J. Gayvert,  Qinghui Ge,  G. Gidofalvi,  M. Goldey,  J. Gomes,  
+ C. Gonzalez-Espinoza,  S. Gulania,  A. Gunina,  M. W. D. Hanson-Heine,  
+ P. H. P. Harbach,  A. W. Hauser,  M. F. Herbst,  M. Hernandez Vera,  
+ M. Hodecker,  Z. C. Holden,  S. Houck,  Xunkun Huang,  Kerwin Hui,  
+ B. C. Huynh,  M. Ivanov,  Hyunjun Ji,  Hanjie Jiang,  B. Kaduk,  S. Kaehler,  
+ K. Khistyaev,  Jaehoon Kim,  P. Klunzinger,  Z. Koczor-Benda,  
+ Joong Hoon Koh,  D. Kosenkov,  L. Koulias,  T. Kowalczyk,  C. M. Krauter,  
+ K. Kue,  A. Kunitsa,  T. Kus,  A. Landau,  K. V. Lawler,  D. Lefrancois,  
+ S. Lehtola,  Rain Li,  Yi-Pei Li,  Jiashu Liang,  M. Liebenthal,  
+ Hung-Hsuan Lin,  You-Sheng Lin,  Fenglai Liu,  Kuan-Yu Liu,  
+ M. Loipersberger,  A. Luenser,  A. Manjanath,  P. Manohar,  E. Mansoor,  
+ S. F. Manzer,  Shan-Ping Mao,  A. V. Marenich,  T. Markovich,  S. Mason,  
+ S. A. Maurer,  P. F. McLaughlin,  M. F. S. J. Menger,  J.-M. Mewes,  
+ S. A. Mewes,  P. Morgante,  J. W. Mullinax,  K. J. Oosterbaan,  G. Paran,  
+ Alexander C. Paul,  Suranjan K. Paul,  F. Pavosevic,  Zheng Pei,  S. Prager,  
+ E. I. Proynov,  E. Ramos,  B. Rana,  A. E. Rask,  A. Rettig,  R. M. Richard,  
+ F. Rob,  E. Rossomme,  T. Scheele,  M. Scheurer,  M. Schneider,  
+ N. Sergueev,  S. M. Sharada,  W. Skomorowski,  D. W. Small,  C. J. Stein,  
+ Yu-Chuan Su,  E. J. Sundstrom,  Zhen Tao,  J. Thirman,  T. Tsuchimochi,  
+ N. M. Tubman,  S. P. Veccham,  O. Vydrov,  J. Wenzel,  J. Witte,  A. Yamada,  
+ Kun Yao,  S. Yeganeh,  S. R. Yost,  A. Zech,  Igor Ying Zhang,  Xing Zhang,  
+ Yu Zhang,  D. Zuev,  A. Aspuru-Guzik,  A. T. Bell,  N. A. Besley,  
+ K. B. Bravaya,  B. R. Brooks,  D. Casanova,  Jeng-Da Chai,  S. Coriani,  
+ C. J. Cramer,  A. E. DePrince, III,  R. A. DiStasio Jr.,  A. Dreuw,  
+ B. D. Dunietz,  T. R. Furlani,  W. A. Goddard III,  S. Grimme,  
+ S. Hammes-Schiffer,  T. Head-Gordon,  W. J. Hehre,  Chao-Ping Hsu,  
+ T.-C. Jagau,  Yousung Jung,  A. Klamt,  Jing Kong,  D. S. Lambrecht,  
+ WanZhen Liang,  N. J. Mayhall,  C. W. McCurdy,  J. B. Neaton,  
+ C. Ochsenfeld,  J. A. Parkhill,  R. Peverati,  V. A. Rassolov,  Yihan Shao,  
+ L. V. Slipchenko,  T. Stauch,  R. P. Steele,  J. E. Subotnik,  
+ A. J. W. Thom,  A. Tkatchenko,  D. G. Truhlar,  T. Van Voorhis,  
+ T. A. Wesolowski,  K. B. Whaley,  H. L. Woodcock III,  P. M. Zimmerman,  
+ S. Faraji,  P. M. W. Gill,  M. Head-Gordon,  J. M. Herbert,  A. I. Krylov
+
+ Additional authors for Version 5.4.1: 
+ S. Kotaru,  Shaozhi Li,  Xiangyuan Li,  F. Matz,  A. Molle,  Haisheng Ren,  
+ Yingli Su,  Hung-Yi Tsai,  C. Utku,  Fang Wang
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  R. Baer,  J. Baker,  G. J. O. Beran,  
+ K. Brandhorst,  S. T. Brown,  E. F. C. Byrd,  A. K. Chakraborty,  
+ G. K. L. Chan,  Chun-Min Chang,  Yunqing Chen,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  R. G. Edgar,  J. Fosso-Tande,  
+ L. Fusti-Molnar,  D. Ghosh,  A. Ghysels,  A. Golubeva-Zadorozhnaya,  
+ J. Gonthier,  M. S. Gordon,  S. R. Gwaltney,  G. Hawkins,  J. E. Herr,  
+ A. Heyden,  S. Hirata,  E. G. Hohenstein,  G. Kedziora,  F. J. Keil,  
+ C. Kelley,  Jihan Kim,  R. A. King,  R. Z. Khaliullin,  P. P. Korambath,  
+ W. Kurlancheek,  A. Laurent,  A. M. Lee,  M. S. Lee,  S. V. Levchenko,  
+ Ching Yeh Lin,  D. Liotard,  E. Livshits,  R. C. Lochan,  I. Lotan,  
+ L. A. Martinez-Martinez,  P. E. Maslen,  N. Nair,  D. P. O'Neill,  
+ D. Neuhauser,  E. Neuscamman,  C. M. Oana,  R. Olivares-Amaya,  R. Olson,  
+ T. M. Perrine,  B. Peters,  P. A. Pieniazek,  A. Prociuk,  Y. M. Rhee,  
+ J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  H. F. Schaefer III,  
+ M. W. Schmidt,  N. E. Schultz,  S. Sharma,  N. Shenvi,  C. D. Sherrill,  
+ A. C. Simmonett,  A. Sodt,  T. Stein,  D. Stuck,  K. S. Thanthiriwatte,  
+ V. Vanovschi,  L. Vogt,  Tao Wang,  A. Warshel,  M. A. Watson,  
+ C. F. Williams,  Q. Wu,  X. Xu,  Jun Yang,  W. Zhang,  Yan Zhao
+
+ Please cite Q-Chem as follows:
+ Y. Shao et al., Mol. Phys. 113, 184-215 (2015)
+ DOI: 10.1080/00268976.2014.952696
+
+ Q-Chem 5.4.1 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 9.900.5 (Nocturnal Misbehaviour).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Sun Sep  4 11:46:59 2022  
+
+orc44
+ Host: 0
+
+     Scratch files written to /scratch/yongbin/qchem30392//
+ Processing $rem in /home/users/yongbin/software/yongbin_quantum/config/preferences:
+ Processing $rem in /home/users/yongbin/.qchemrc:
+
+ Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$comment
+Water molecule
+$end
+
+$molecule
+0 1
+O
+H O 1.5
+H O 1.5 H 104.5
+$end
+
+$rem
+   n_frozen_core = 0
+   print_qis = true
+   BASIS                = sto-3g
+!   SYMMETRY             = true
+!   CC_SYMMETRY          = false
+   METHOD               = eom-ccsd
+   EE_SINGLETS          = [1,1,1,1] ! Compute two EOM-EE singlet excited states
+   EE_TRIPLETS          = [1,1,1,1] ! Compute two EOM-EE triplet excited states
+   CC_REF_PROP          = true ! Compute ground state properties
+   CC_EOM_PROP          = true ! Compute excited state properties
+!   CC_OSFNO             = true
+   GUI                  = 2
+$end
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      O      -0.0000000000     0.0000000000     0.1836651840
+    2      H      -1.1860343606    -0.0000000000    -0.7346607360
+    3      H       1.1860343606    -0.0000000000    -0.7346607360
+ ----------------------------------------------------------------
+ Molecular Point Group                 C2v   NOp =  4
+ Largest Abelian Subgroup              C2v   NOp =  4
+ Nuclear Repulsion Energy =           5.86764371 hartrees
+ There are        5 alpha and        5 beta electrons
+ Requested basis set is STO-3G
+ There are 4 shells and 7 basis functions
+ Total memory of 2000 MB is distributed as follows: 
+   MEM_STATIC is set to 192 MB
+   QALLOC/CCMAN JOB total memory use is  1808 MB
+ Warning: actual memory use might exceed 2000 MB
+
+ Total QAlloc Memory Limit   2000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+
+                       Distance Matrix (Angstroms)
+             O (  1)   H (  2)
+   H (  2)  1.500000
+   H (  3)  1.500000  2.372069
+
+ A cutoff of  1.0D-14 yielded     10 shell pairs
+ There are        34 function pairs
+ Smallest overlap matrix eigenvalue = 6.38E-01
+
+ Scale SEOQF with 1.000000e+00/1.000000e+00/1.000000e+00
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =    -0.0000000004 hartrees
+ Guess from superposition of atomic densities
+ Warning:  Energy on first SCF cycle will be non-variational
+ SAD guess density has 10.000000 electrons
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Hartree-Fock
+ using 20 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A restricted SCF calculation will be
+ performed using DIIS
+ SCF converges when DIIS error is below 1.0e-08
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -73.9211673563      1.31e-01  
+    2     -74.5866067225      9.92e-02  
+    3     -74.6983368416      2.32e-02  
+    4     -74.7041333950      1.02e-03  
+    5     -74.7041516137      3.85e-04  
+    6     -74.7041563418      1.28e-04  
+    7     -74.7041568728      5.04e-06  
+    8     -74.7041568732      4.91e-08  
+    9     -74.7041568732      6.45e-11  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 0.95s  wall 1.00s 
+ SCF   energy in the final basis set =      -74.7041568732
+ Total energy in the final basis set =      -74.7041568732
+
+
+ ------------------------------------------------------------------------------
+
+   CCMAN2: suite of methods based on coupled cluster
+           and equation of motion theories.
+
+   Components:
+   * libvmm-1.3-trunk
+     by Evgeny Epifanovsky, Ilya Kaliman.
+   * libtensor-2.5-trunk
+     by Evgeny Epifanovsky, Michael Wormit, Dmitry Zuev, Sam Manzer, 
+        Ilya Kaliman.
+   * libcc-2.5-trunk
+     by Evgeny Epifanovsky, Arik Landau, Tomasz Kus, Kirill Khistyaev, 
+        Dmitry Zuev, Prashant Manohar, Xintian Feng, Anna Krylov, 
+        Matthew Goldey, Alec White, Thomas Jagau, Kaushik Nanda, 
+        Anastasia Gunina, Alexander Kunitsa, Joonho Lee.
+
+   CCMAN original authors:
+   Anna I. Krylov, C. David Sherrill, Steven R. Gwaltney,
+   Edward F. C. Byrd (2000)
+   Sergey V. Levchenko, Lyudmila V. Slipchenko, Tao Wang,
+   Ana-Maria C. Cristian (2003)
+   Piotr A. Pieniazek, C. Melania Oana, Evgeny Epifanovsky (2007)
+   Prashant Manohar (2009)
+
+ ------------------------------------------------------------------------------
+
+
+ Allocating and initializing 1808MB of RAM...
+ Calculation will run on 20 cores.
+
+
+ Alpha MOs, Restricted
+ -- Occupied --                  
+-20.309  -1.143  -0.406  -0.400  -0.371
+  1 A1    2 A1    1 B1    1 B2    3 A1                                         
+ -- Virtual --                   
+  0.243   0.307
+  4 A1    2 B1                                                                 
+
+ Beta MOs, Restricted
+ -- Occupied --                  
+-20.309  -1.143  -0.406  -0.400  -0.371
+  1 A1    2 A1    1 B1    1 B2    3 A1                                         
+ -- Virtual --                   
+  0.243   0.307
+  4 A1    2 B1                                                                 
+
+ Occupation and symmetry of molecular orbitals
+
+ Point group: C2v (4 irreducible representations).
+
+                           A1   A2   B1   B2    All 
+ ----------------------------------------------------
+ All molecular orbitals:
+  - Alpha                  4    0    2    1     7   
+  - Beta                   4    0    2    1     7   
+ ----------------------------------------------------
+ Alpha orbitals:
+  - Frozen occupied        0    0    0    0     0   
+  - Active occupied        3    0    1    1     5   
+  - Active virtual         1    0    1    0     2   
+  - Frozen virtual         0    0    0    0     0   
+ ----------------------------------------------------
+ Beta orbitals:
+  - Frozen occupied        0    0    0    0     0   
+  - Active occupied        3    0    1    1     5   
+  - Active virtual         1    0    1    0     2   
+  - Frozen virtual         0    0    0    0     0   
+ ----------------------------------------------------
+
+ Import integrals:   CPU 0.00 s  wall 0.00 s
+
+ Import integrals:   CPU 0.25 s  wall 0.03 s
+
+ Run QIS:   CPU 0.01 s  wall 0.02 s
+
+ MP2 amplitudes:   CPU 0.02 s  wall 0.02 s
+
+Running a double precision version
+           CCSD T amplitudes will be solved using DIIS.
+
+           Start     Size      MaxIter   EConv     TConv     
+           3         7         100       1.00e-06  1.00e-04  
+ ------------------------------------------------------------------------------
+           Energy (a.u.)   Ediff      Tdiff       Comment
+ ------------------------------------------------------------------------------
+           -74.81497174                           
+     1     -74.84348484   2.85e-02   3.61e-01     
+     2     -74.85686933   1.34e-02   9.57e-02     
+     3     -74.86390392   7.03e-03   4.97e-02     
+     4     -74.87176419   7.86e-03   4.64e-02     Switched to DIIS steps.
+     5     -74.87200959   2.45e-04   9.19e-03     
+     6     -74.87241610   4.07e-04   3.14e-03     
+     7     -74.87251329   9.72e-05   9.27e-04     
+     8     -74.87245722   5.61e-05   5.11e-04     
+     9     -74.87247752   2.03e-05   1.47e-04     
+    10     -74.87247629   1.23e-06   4.17e-05     
+    11     -74.87247629   4.70e-09   1.50e-05     
+ ------------------------------------------------------------------------------
+           -74.87247629                           CCSD T converged.
+
+End of double precision
+ SCF energy                 = -74.70415687
+ MP2 energy                 = -74.81497174
+ CCSD correlation energy    =  -0.16831942
+ CCSD total energy          = -74.87247629
+
+ CCSD  T1^2 = 0.0046  T2^2 = 0.2186  Leading amplitudes:
+
+ Amplitude    Orbitals with energies
+  0.0436066321       3 (A1) A                  ->    4 (A1) A                   
+                    -0.3706                          0.2429                     
+  0.0436066321       3 (A1) B                  ->    4 (A1) B                   
+                    -0.3706                          0.2429                     
+ -0.0187554830       2 (A1) A                  ->    4 (A1) A                   
+                    -1.1429                          0.2429                     
+ -0.0187554830       2 (A1) B                  ->    4 (A1) B                   
+                    -1.1429                          0.2429                     
+
+ Amplitude    Orbitals with energies
+ -0.2276219922       3 (A1) A      3 (A1) B    ->    4 (A1) A      4 (A1) B     
+                    -0.3706       -0.3706            0.2429        0.2429       
+  0.2276219922       3 (A1) A      3 (A1) B    ->    4 (A1) B      4 (A1) A     
+                    -0.3706       -0.3706            0.2429        0.2429       
+  0.2276219922       3 (A1) B      3 (A1) A    ->    4 (A1) A      4 (A1) B     
+                    -0.3706       -0.3706            0.2429        0.2429       
+ -0.2276219922       3 (A1) B      3 (A1) A    ->    4 (A1) B      4 (A1) A     
+                    -0.3706       -0.3706            0.2429        0.2429       
+ -0.2004119609       1 (B1) A      1 (B1) B    ->    2 (B1) A      2 (B1) B     
+                    -0.4063       -0.4063            0.3072        0.3072       
+  0.2004119609       1 (B1) A      1 (B1) B    ->    2 (B1) B      2 (B1) A     
+                    -0.4063       -0.4063            0.3072        0.3072       
+  0.2004119609       1 (B1) B      1 (B1) A    ->    2 (B1) A      2 (B1) B     
+                    -0.4063       -0.4063            0.3072        0.3072       
+ -0.2004119609       1 (B1) B      1 (B1) A    ->    2 (B1) B      2 (B1) A     
+                    -0.4063       -0.4063            0.3072        0.3072       
+  0.1572016445       3 (A1) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+                    -0.3706       -0.4063            0.2429        0.3072       
+ -0.1572016445       3 (A1) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+                    -0.3706       -0.4063            0.3072        0.2429       
+  0.1572016445       1 (B1) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+                    -0.4063       -0.3706            0.3072        0.2429       
+ -0.1572016445       1 (B1) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+                    -0.4063       -0.3706            0.2429        0.3072       
+ -0.1572016445       3 (A1) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+                    -0.3706       -0.4063            0.3072        0.2429       
+  0.1572016445       3 (A1) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+                    -0.3706       -0.4063            0.2429        0.3072       
+ -0.1572016445       1 (B1) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+                    -0.4063       -0.3706            0.2429        0.3072       
+  0.1572016445       1 (B1) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+                    -0.4063       -0.3706            0.3072        0.2429       
+  0.1533535784       3 (A1) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+                    -0.3706       -0.4063            0.3072        0.2429       
+ -0.1533535784       3 (A1) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+                    -0.3706       -0.4063            0.2429        0.3072       
+  0.1533535784       1 (B1) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+                    -0.4063       -0.3706            0.2429        0.3072       
+ -0.1533535784       1 (B1) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+                    -0.4063       -0.3706            0.3072        0.2429       
+ -0.1533535784       3 (A1) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+                    -0.3706       -0.4063            0.2429        0.3072       
+  0.1533535784       3 (A1) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+                    -0.3706       -0.4063            0.3072        0.2429       
+ -0.1533535784       1 (B1) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+                    -0.4063       -0.3706            0.3072        0.2429       
+  0.1533535784       1 (B1) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+                    -0.4063       -0.3706            0.2429        0.3072       
+ -0.1088943308       1 (B1) A      1 (B1) B    ->    4 (A1) A      4 (A1) B     
+                    -0.4063       -0.4063            0.2429        0.2429       
+  0.1088943308       1 (B1) A      1 (B1) B    ->    4 (A1) B      4 (A1) A     
+                    -0.4063       -0.4063            0.2429        0.2429       
+  0.1088943308       1 (B1) B      1 (B1) A    ->    4 (A1) A      4 (A1) B     
+                    -0.4063       -0.4063            0.2429        0.2429       
+ -0.1088943308       1 (B1) B      1 (B1) A    ->    4 (A1) B      4 (A1) A     
+                    -0.4063       -0.4063            0.2429        0.2429       
+ -0.1086156168       3 (A1) A      3 (A1) B    ->    2 (B1) A      2 (B1) B     
+                    -0.3706       -0.3706            0.3072        0.3072       
+  0.1086156168       3 (A1) A      3 (A1) B    ->    2 (B1) B      2 (B1) A     
+                    -0.3706       -0.3706            0.3072        0.3072       
+  0.1086156168       3 (A1) B      3 (A1) A    ->    2 (B1) A      2 (B1) B     
+                    -0.3706       -0.3706            0.3072        0.3072       
+ -0.1086156168       3 (A1) B      3 (A1) A    ->    2 (B1) B      2 (B1) A     
+                    -0.3706       -0.3706            0.3072        0.3072       
+
+ Computing CCSD intermediates for later calculations in double precision
+ Finished.
+
+Running a double precision version
+           CCSD Lambda amplitudes will be solved using DIIS.
+           Start     Size      MaxIter   EConv     LConv     
+           3         7         100       1.00e-06  1.00e-04  
+ ------------------------------------------------------------------------------
+            Enorm      Ldiff       Comment
+ ------------------------------------------------------------------------------
+     1     8.75e-02   5.83e-02     
+     2     1.75e-02   1.10e-02     
+     3     8.86e-03   5.12e-03     
+     4     2.03e-03   4.18e-03     Switched to DIIS steps.
+     5     1.05e-03   4.75e-06     
+     6     3.59e-04   5.52e-04     
+     7     1.05e-04   2.79e-04     
+     8     3.87e-05   5.09e-05     
+     9     1.05e-05   1.60e-05     
+    10     2.48e-06   1.35e-06     
+    11     6.95e-07   2.93e-07     
+ ------------------------------------------------------------------------------
+                                   CCSD Lambda converged.
+
+ Computing density matrices in double precision...
+ Computing density matrices... Done.
+ Reference state properties
+ Dipole moment (a.u.): 0.231941 (X 0.000000, Y 0.000000, Z -0.231941)
+ R-squared (a.u.): 27.328142 (XX 13.684269, YY 4.754017, ZZ 8.889856)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 5.000000, Tr(BB) 5.000000
+ Density matrix was written to a file for further analysis.
+
+ CCSD calculation:   CPU 4.52 s  wall 1.22 s
+
+        Solving for EOMEE-CCSD A1 singlet states.
+
+Running a double precision version
+        EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using standard  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     7.37e-02   14.0386   
+      1    0      2     6.62e-01   12.6176   
+      2    0      3     1.97e-02   9.6847   
+      3    0      4     6.82e-03   9.0373   
+      4    0      5     4.62e-03   8.9513   
+      5    0      6     6.08e-03   8.9152   
+      6    0      7     3.41e-03   8.8569   
+      7    0      8     4.85e-03   8.8239   
+      8    0      9     1.76e-03   8.7991   
+      9    0      10    1.21e-03   8.7861   
+      10   0      11    1.15e-04   8.7844   
+      11   0      12    1.55e-05   8.7840   
+      12   0      13    1.21e-05   8.7834   
+      13   1      14    5.59e-07   8.7831*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/A1
+ Total energy = -74.54970322 a.u.  Excitation energy = 8.78310197 eV.
+ R0^2 = 0.0215  R1^2 = 0.6215  R2^2 = 0.3785  Res^2 = 5.59e-07
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.4649903033       3 (A1) A                  ->    4 (A1) A                   
+  0.4649903033       3 (A1) B                  ->    4 (A1) B                   
+  0.3026949703       1 (B1) A                  ->    2 (B1) A                   
+  0.3026949703       1 (B1) B                  ->    2 (B1) B                   
+ -0.0537213852       2 (A1) A                  ->    4 (A1) A                   
+ -0.0537213852       2 (A1) B                  ->    4 (A1) B                   
+  0.0002445097       1 (A1) A                  ->    4 (A1) A                   
+  0.0002445097       1 (A1) B                  ->    4 (A1) B                   
+  0.3869033481       1 (B1) A      1 (B1) B    ->    4 (A1) A      4 (A1) B     
+ -0.3869033481       1 (B1) A      1 (B1) B    ->    4 (A1) B      4 (A1) A     
+ -0.3869033481       1 (B1) B      1 (B1) A    ->    4 (A1) A      4 (A1) B     
+  0.3869033481       1 (B1) B      1 (B1) A    ->    4 (A1) B      4 (A1) A     
+ -0.3387239829       3 (A1) A      3 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.3387239829       3 (A1) A      3 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.3387239829       3 (A1) B      3 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.3387239829       3 (A1) B      3 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.1874781532       1 (B1) A      1 (B1) B    ->    2 (B1) A      2 (B1) B     
+  0.1874781532       1 (B1) A      1 (B1) B    ->    2 (B1) B      2 (B1) A     
+  0.1874781532       1 (B1) B      1 (B1) A    ->    2 (B1) A      2 (B1) B     
+ -0.1874781532       1 (B1) B      1 (B1) A    ->    2 (B1) B      2 (B1) A     
+ -0.1348196495       3 (A1) A      1 (B1) A    ->    4 (A1) A      2 (B1) A     
+  0.1348196495       3 (A1) A      1 (B1) A    ->    2 (B1) A      4 (A1) A     
+  0.1348196495       1 (B1) A      3 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.1348196495       1 (B1) A      3 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.1348196495       3 (A1) B      1 (B1) B    ->    4 (A1) B      2 (B1) B     
+  0.1348196495       3 (A1) B      1 (B1) B    ->    2 (B1) B      4 (A1) B     
+  0.1348196495       1 (B1) B      3 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.1348196495       1 (B1) B      3 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.1132354702       3 (A1) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+ -0.1132354702       3 (A1) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+  0.1132354702       1 (B1) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.1132354702       1 (B1) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.1132354702       3 (A1) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+  0.1132354702       3 (A1) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+ -0.1132354702       1 (B1) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.1132354702       1 (B1) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0755511081       3 (A1) A      3 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0755511081       3 (A1) A      3 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0755511081       3 (A1) B      3 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0755511081       3 (A1) B      3 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0497717871       1 (B2) A      1 (B2) B    ->    2 (B1) A      2 (B1) B     
+ -0.0497717871       1 (B2) A      1 (B2) B    ->    2 (B1) B      2 (B1) A     
+ -0.0497717871       1 (B2) B      1 (B2) A    ->    2 (B1) A      2 (B1) B     
+  0.0497717871       1 (B2) B      1 (B2) A    ->    2 (B1) B      2 (B1) A     
+  0.0401643975       2 (A1) A      2 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0401643975       2 (A1) A      2 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0401643975       2 (A1) B      2 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0401643975       2 (A1) B      2 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0363732407       1 (B2) A      1 (B2) B    ->    4 (A1) A      4 (A1) B     
+  0.0363732407       1 (B2) A      1 (B2) B    ->    4 (A1) B      4 (A1) A     
+  0.0363732407       1 (B2) B      1 (B2) A    ->    4 (A1) A      4 (A1) B     
+ -0.0363732407       1 (B2) B      1 (B2) A    ->    4 (A1) B      4 (A1) A     
+ -0.0331236881       2 (A1) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+  0.0331236881       2 (A1) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0331236881       1 (B1) A      2 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0331236881       1 (B1) A      2 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0331236881       2 (A1) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0331236881       2 (A1) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+  0.0331236881       1 (B1) B      2 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0331236881       1 (B1) B      2 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0330781702       2 (A1) A      2 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.0330781702       2 (A1) A      2 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0330781702       2 (A1) B      2 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0330781702       2 (A1) B      2 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0244562853       2 (A1) A      1 (B1) A    ->    4 (A1) A      2 (B1) A     
+  0.0244562853       2 (A1) A      1 (B1) A    ->    2 (B1) A      4 (A1) A     
+  0.0244562853       1 (B1) A      2 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0244562853       1 (B1) A      2 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0244562853       2 (A1) B      1 (B1) B    ->    4 (A1) B      2 (B1) B     
+  0.0244562853       2 (A1) B      1 (B1) B    ->    2 (B1) B      4 (A1) B     
+  0.0244562853       1 (B1) B      2 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0244562853       1 (B1) B      2 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0201677519       2 (A1) A      3 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.0201677519       3 (A1) A      2 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0201677519       2 (A1) A      3 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0201677519       3 (A1) A      2 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0201677519       3 (A1) B      2 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0201677519       2 (A1) B      3 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.0201677519       2 (A1) B      3 (A1) A    ->    4 (A1) B      4 (A1) A     
+  0.0201677519       3 (A1) B      2 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0129293856       3 (A1) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+  0.0129293856       3 (A1) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0129293856       1 (B1) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0129293856       1 (B1) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0129293856       3 (A1) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0129293856       3 (A1) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+  0.0129293856       1 (B1) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0129293856       1 (B1) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0090696585       2 (A1) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+  0.0090696585       2 (A1) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0090696585       1 (B1) A      2 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0090696585       1 (B1) A      2 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0090696585       2 (A1) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0090696585       2 (A1) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+  0.0090696585       1 (B1) B      2 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0090696585       1 (B1) B      2 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0051682816       2 (A1) A      3 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0051682816       3 (A1) A      2 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0051682816       2 (A1) A      3 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0051682816       3 (A1) A      2 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0051682816       3 (A1) B      2 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0051682816       2 (A1) B      3 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0051682816       2 (A1) B      3 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0051682816       3 (A1) B      2 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0007976271       1 (A1) A      2 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0007976271       2 (A1) A      1 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.0007976271       1 (A1) A      2 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0007976271       2 (A1) A      1 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0007976271       2 (A1) B      1 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.0007976271       1 (A1) B      2 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0007976271       1 (A1) B      2 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0007976271       2 (A1) B      1 (A1) A    ->    4 (A1) B      4 (A1) A     
+  0.0006250221       1 (A1) A      2 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0006250221       2 (A1) A      1 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0006250221       1 (A1) A      2 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0006250221       2 (A1) A      1 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0006250221       2 (A1) B      1 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0006250221       1 (A1) B      2 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0006250221       1 (A1) B      2 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0006250221       2 (A1) B      1 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0001771034       1 (A1) A      1 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0001771034       1 (A1) A      1 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0001771034       1 (A1) B      1 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0001771034       1 (A1) B      1 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0001055530       1 (A1) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0001055530       1 (A1) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+  0.0001055530       1 (B1) A      1 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0001055530       1 (B1) A      1 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0001055530       1 (A1) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+  0.0001055530       1 (A1) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0001055530       1 (B1) B      1 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0001055530       1 (B1) B      1 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0001017811       1 (A1) A      1 (B1) A    ->    4 (A1) A      2 (B1) A     
+  0.0001017811       1 (A1) A      1 (B1) A    ->    2 (B1) A      4 (A1) A     
+  0.0001017811       1 (B1) A      1 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0001017811       1 (B1) A      1 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0001017811       1 (A1) B      1 (B1) B    ->    4 (A1) B      2 (B1) B     
+  0.0001017811       1 (A1) B      1 (B1) B    ->    2 (B1) B      4 (A1) B     
+  0.0001017811       1 (B1) B      1 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0001017811       1 (B1) B      1 (A1) B    ->    2 (B1) B      4 (A1) B     
+ -0.0000892347       1 (A1) A      1 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.0000892347       1 (A1) A      1 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0000892347       1 (A1) B      1 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0000892347       1 (A1) B      1 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0000686418       1 (A1) A      3 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0000686418       3 (A1) A      1 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.0000686418       1 (A1) A      3 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0000686418       3 (A1) A      1 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0000686418       3 (A1) B      1 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.0000686418       1 (A1) B      3 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0000686418       1 (A1) B      3 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0000686418       3 (A1) B      1 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0000363238       1 (A1) A      3 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0000363238       3 (A1) A      1 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0000363238       1 (A1) A      3 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0000363238       3 (A1) A      1 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0000363238       3 (A1) B      1 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0000363238       1 (A1) B      3 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0000363238       1 (A1) B      3 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0000363238       3 (A1) B      1 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0000074924       1 (A1) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0000074924       1 (A1) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+  0.0000074924       1 (B1) A      1 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0000074924       1 (B1) A      1 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0000074924       1 (A1) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+  0.0000074924       1 (A1) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0000074924       1 (B1) B      1 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0000074924       1 (B1) B      1 (A1) A    ->    2 (B1) B      4 (A1) A     
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A1)    -20.3090
+               2       Occ  Alpha       2 (A1)     -1.1429
+               5       Occ  Alpha       3 (A1)     -0.3706
+               3       Occ  Alpha       1 (B1)     -0.4063
+               4       Occ  Alpha       1 (B2)     -0.3998
+               1       Occ  Beta        1 (A1)    -20.3090
+               2       Occ  Beta        2 (A1)     -1.1429
+               5       Occ  Beta        3 (A1)     -0.3706
+               3       Occ  Beta        1 (B1)     -0.4063
+               4       Occ  Beta        1 (B2)     -0.3998
+               6       Vir  Alpha       4 (A1)      0.2429
+               7       Vir  Alpha       2 (B1)      0.3072
+               6       Vir  Beta        4 (A1)      0.2429
+               7       Vir  Beta        2 (B1)      0.3072
+
+
+ EEs and amplitudes of EOMEE has be exported to fchk file
+Running a double precision version
+      EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     3.78e-03   8.7831   
+      1    0      2     1.89e-02   8.7830   
+      2    0      3     2.32e-03   8.7829   
+      3    0      4     2.94e-04   8.7827   
+      4    0      5     3.60e-04   8.7827   
+      5    0      6     1.13e-04   8.7827   
+      6    0      7     2.03e-04   8.7826   
+      7    0      8     2.27e-05   8.7826   
+      8    1      9     3.33e-06   8.7826*  
+
+     Davidson procedure converged
+
+ Excited state properties for  EOMEE-CCSD transition 1/A1
+ Dipole moment (a.u.): 0.139071 (X 0.000000, Y 0.000000, Z -0.139071)
+ R-squared (a.u.): 27.135906 (XX 13.468528, YY 4.681848, ZZ 8.985529)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 5.000000, Tr(BB) 5.000000
+
+        Solving for EOMEE-CCSD A2 singlet states.
+
+Running a double precision version
+        EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using standard  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     6.10e-02   7.5628   
+      1    0      2     2.59e-02   4.2096   
+      2    0      3     1.44e-02   4.0799   
+      3    0      4     6.47e-05   4.0692   
+      4    1      5     4.21e-06   4.0693*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/A2
+ Total energy = -74.72293121 a.u.  Excitation energy = 4.06932860 eV.
+ R0^2 = 0.0000  R1^2 = 0.7758  R2^2 = 0.2242  Res^2 = 4.21e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.6228237525       1 (B2) A                  ->    2 (B1) A                   
+ -0.6228237525       1 (B2) B                  ->    2 (B1) B                   
+ -0.1937500604       1 (B1) A      1 (B2) B    ->    2 (B1) A      2 (B1) B     
+  0.1937500604       1 (B1) A      1 (B2) B    ->    2 (B1) B      2 (B1) A     
+ -0.1937500604       1 (B2) A      1 (B1) B    ->    2 (B1) A      2 (B1) B     
+  0.1937500604       1 (B2) A      1 (B1) B    ->    2 (B1) B      2 (B1) A     
+  0.1937500604       1 (B1) B      1 (B2) A    ->    2 (B1) A      2 (B1) B     
+ -0.1937500604       1 (B1) B      1 (B2) A    ->    2 (B1) B      2 (B1) A     
+  0.1937500604       1 (B2) B      1 (B1) A    ->    2 (B1) A      2 (B1) B     
+ -0.1937500604       1 (B2) B      1 (B1) A    ->    2 (B1) B      2 (B1) A     
+  0.1797529894       3 (A1) A      1 (B2) B    ->    2 (B1) A      4 (A1) B     
+ -0.1797529894       3 (A1) A      1 (B2) B    ->    4 (A1) B      2 (B1) A     
+  0.1797529894       1 (B2) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.1797529894       1 (B2) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.1797529894       3 (A1) B      1 (B2) A    ->    4 (A1) A      2 (B1) B     
+  0.1797529894       3 (A1) B      1 (B2) A    ->    2 (B1) B      4 (A1) A     
+ -0.1797529894       1 (B2) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.1797529894       1 (B2) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.1634290659       3 (A1) A      1 (B2) B    ->    4 (A1) A      2 (B1) B     
+ -0.1634290659       3 (A1) A      1 (B2) B    ->    2 (B1) B      4 (A1) A     
+  0.1634290659       1 (B2) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.1634290659       1 (B2) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.1634290659       3 (A1) B      1 (B2) A    ->    2 (B1) A      4 (A1) B     
+  0.1634290659       3 (A1) B      1 (B2) A    ->    4 (A1) B      2 (B1) A     
+ -0.1634290659       1 (B2) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.1634290659       1 (B2) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.1161184045       1 (B1) A      1 (B2) B    ->    4 (A1) A      4 (A1) B     
+  0.1161184045       1 (B1) A      1 (B2) B    ->    4 (A1) B      4 (A1) A     
+ -0.1161184045       1 (B2) A      1 (B1) B    ->    4 (A1) A      4 (A1) B     
+  0.1161184045       1 (B2) A      1 (B1) B    ->    4 (A1) B      4 (A1) A     
+  0.1161184045       1 (B1) B      1 (B2) A    ->    4 (A1) A      4 (A1) B     
+ -0.1161184045       1 (B1) B      1 (B2) A    ->    4 (A1) B      4 (A1) A     
+  0.1161184045       1 (B2) B      1 (B1) A    ->    4 (A1) A      4 (A1) B     
+ -0.1161184045       1 (B2) B      1 (B1) A    ->    4 (A1) B      4 (A1) A     
+  0.0314561350       2 (A1) A      1 (B2) B    ->    2 (B1) A      4 (A1) B     
+ -0.0314561350       2 (A1) A      1 (B2) B    ->    4 (A1) B      2 (B1) A     
+  0.0314561350       1 (B2) A      2 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0314561350       1 (B2) A      2 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0314561350       2 (A1) B      1 (B2) A    ->    4 (A1) A      2 (B1) B     
+  0.0314561350       2 (A1) B      1 (B2) A    ->    2 (B1) B      4 (A1) A     
+ -0.0314561350       1 (B2) B      2 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0314561350       1 (B2) B      2 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0271628192       2 (A1) A      1 (B2) B    ->    4 (A1) A      2 (B1) B     
+ -0.0271628192       2 (A1) A      1 (B2) B    ->    2 (B1) B      4 (A1) A     
+  0.0271628192       1 (B2) A      2 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0271628192       1 (B2) A      2 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0271628192       2 (A1) B      1 (B2) A    ->    2 (B1) A      4 (A1) B     
+  0.0271628192       2 (A1) B      1 (B2) A    ->    4 (A1) B      2 (B1) A     
+ -0.0271628192       1 (B2) B      2 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0271628192       1 (B2) B      2 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0173623489       3 (A1) A      1 (B2) A    ->    4 (A1) A      2 (B1) A     
+  0.0173623489       3 (A1) A      1 (B2) A    ->    2 (B1) A      4 (A1) A     
+  0.0173623489       1 (B2) A      3 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0173623489       1 (B2) A      3 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0173623489       3 (A1) B      1 (B2) B    ->    4 (A1) B      2 (B1) B     
+  0.0173623489       3 (A1) B      1 (B2) B    ->    2 (B1) B      4 (A1) B     
+  0.0173623489       1 (B2) B      3 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0173623489       1 (B2) B      3 (A1) B    ->    2 (B1) B      4 (A1) B     
+ -0.0043563700       2 (A1) A      1 (B2) A    ->    4 (A1) A      2 (B1) A     
+  0.0043563700       2 (A1) A      1 (B2) A    ->    2 (B1) A      4 (A1) A     
+  0.0043563700       1 (B2) A      2 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0043563700       1 (B2) A      2 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0043563700       2 (A1) B      1 (B2) B    ->    4 (A1) B      2 (B1) B     
+  0.0043563700       2 (A1) B      1 (B2) B    ->    2 (B1) B      4 (A1) B     
+  0.0043563700       1 (B2) B      2 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0043563700       1 (B2) B      2 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0002216125       1 (A1) A      1 (B2) B    ->    2 (B1) A      4 (A1) B     
+ -0.0002216125       1 (A1) A      1 (B2) B    ->    4 (A1) B      2 (B1) A     
+  0.0002216125       1 (B2) A      1 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0002216125       1 (B2) A      1 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0002216125       1 (A1) B      1 (B2) A    ->    4 (A1) A      2 (B1) B     
+  0.0002216125       1 (A1) B      1 (B2) A    ->    2 (B1) B      4 (A1) A     
+ -0.0002216125       1 (B2) B      1 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0002216125       1 (B2) B      1 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0001169236       1 (A1) A      1 (B2) B    ->    4 (A1) A      2 (B1) B     
+ -0.0001169236       1 (A1) A      1 (B2) B    ->    2 (B1) B      4 (A1) A     
+  0.0001169236       1 (B2) A      1 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0001169236       1 (B2) A      1 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0001169236       1 (A1) B      1 (B2) A    ->    2 (B1) A      4 (A1) B     
+  0.0001169236       1 (A1) B      1 (B2) A    ->    4 (A1) B      2 (B1) A     
+ -0.0001169236       1 (B2) B      1 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0001169236       1 (B2) B      1 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0000877745       1 (A1) A      1 (B2) A    ->    4 (A1) A      2 (B1) A     
+  0.0000877745       1 (A1) A      1 (B2) A    ->    2 (B1) A      4 (A1) A     
+  0.0000877745       1 (B2) A      1 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0000877745       1 (B2) A      1 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0000877745       1 (A1) B      1 (B2) B    ->    4 (A1) B      2 (B1) B     
+  0.0000877745       1 (A1) B      1 (B2) B    ->    2 (B1) B      4 (A1) B     
+  0.0000877745       1 (B2) B      1 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0000877745       1 (B2) B      1 (A1) B    ->    2 (B1) B      4 (A1) B     
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A1)    -20.3090
+               2       Occ  Alpha       2 (A1)     -1.1429
+               5       Occ  Alpha       3 (A1)     -0.3706
+               3       Occ  Alpha       1 (B1)     -0.4063
+               4       Occ  Alpha       1 (B2)     -0.3998
+               1       Occ  Beta        1 (A1)    -20.3090
+               2       Occ  Beta        2 (A1)     -1.1429
+               5       Occ  Beta        3 (A1)     -0.3706
+               3       Occ  Beta        1 (B1)     -0.4063
+               4       Occ  Beta        1 (B2)     -0.3998
+               6       Vir  Alpha       4 (A1)      0.2429
+               7       Vir  Alpha       2 (B1)      0.3072
+               6       Vir  Beta        4 (A1)      0.2429
+               7       Vir  Beta        2 (B1)      0.3072
+
+
+ EEs and amplitudes of EOMEE has be exported to fchk file
+Running a double precision version
+      EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     1.60e-03   4.0693   
+      1    0      2     6.88e-04   4.0701   
+      2    0      3     4.46e-04   4.0701   
+      3    0      4     3.01e-05   4.0702   
+      4    1      5     1.53e-06   4.0706*  
+
+     Davidson procedure converged
+
+ Excited state properties for  EOMEE-CCSD transition 1/A2
+ Dipole moment (a.u.): 0.123229 (X 0.000000, Y 0.000000, Z -0.123229)
+ R-squared (a.u.): 27.953399 (XX 14.556536, YY 4.144892, ZZ 9.251971)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 5.000000, Tr(BB) 5.000000
+
+        Solving for EOMEE-CCSD B1 singlet states.
+
+Running a double precision version
+        EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using standard  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     3.60e-02   12.9554   
+      1    0      2     3.05e-01   12.2595   
+      2    0      3     2.76e-01   9.7761   
+      3    0      4     8.58e-03   8.5935   
+      4    0      5     6.96e-03   8.4746   
+      5    0      6     5.84e-04   8.4593   
+      6    0      7     3.79e-05   8.4579   
+      7    1      8     1.19e-06   8.4579*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/B1
+ Total energy = -74.56165434 a.u.  Excitation energy = 8.45789548 eV.
+ R0^2 = 0.0000  R1^2 = 0.7648  R2^2 = 0.2352  Res^2 = 1.19e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.4554556164       3 (A1) A                  ->    2 (B1) A                   
+ -0.4554556164       3 (A1) B                  ->    2 (B1) B                   
+ -0.4181900682       1 (B1) A                  ->    4 (A1) A                   
+ -0.4181900682       1 (B1) B                  ->    4 (A1) B                   
+  0.0090028579       2 (A1) A                  ->    2 (B1) A                   
+  0.0090028579       2 (A1) B                  ->    2 (B1) B                   
+ -0.0003686742       1 (A1) A                  ->    2 (B1) A                   
+ -0.0003686742       1 (A1) B                  ->    2 (B1) B                   
+  0.2119283359       3 (A1) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.2119283359       3 (A1) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.2119283359       3 (A1) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.2119283359       3 (A1) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.2119283359       3 (A1) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.2119283359       3 (A1) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.2119283359       3 (A1) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.2119283359       3 (A1) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.1797413525       3 (A1) A      1 (B1) B    ->    4 (A1) A      4 (A1) B     
+  0.1797413525       3 (A1) A      1 (B1) B    ->    4 (A1) B      4 (A1) A     
+ -0.1797413525       1 (B1) A      3 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.1797413525       1 (B1) A      3 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.1797413525       3 (A1) B      1 (B1) A    ->    4 (A1) A      4 (A1) B     
+ -0.1797413525       3 (A1) B      1 (B1) A    ->    4 (A1) B      4 (A1) A     
+  0.1797413525       1 (B1) B      3 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.1797413525       1 (B1) B      3 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.1489383920       1 (B1) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+ -0.1489383920       1 (B1) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+  0.1489383920       1 (B1) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+  0.1489383920       1 (B1) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+  0.1489383920       1 (B1) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+  0.1489383920       1 (B1) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+ -0.1489383920       1 (B1) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+ -0.1489383920       1 (B1) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+  0.1290726526       3 (A1) A      1 (B1) B    ->    2 (B1) A      2 (B1) B     
+ -0.1290726526       3 (A1) A      1 (B1) B    ->    2 (B1) B      2 (B1) A     
+  0.1290726526       1 (B1) A      3 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.1290726526       1 (B1) A      3 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.1290726526       3 (A1) B      1 (B1) A    ->    2 (B1) A      2 (B1) B     
+  0.1290726526       3 (A1) B      1 (B1) A    ->    2 (B1) B      2 (B1) A     
+ -0.1290726526       1 (B1) B      3 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.1290726526       1 (B1) B      3 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0320710131       2 (A1) A      1 (B1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0320710131       2 (A1) A      1 (B1) B    ->    2 (B1) B      2 (B1) A     
+  0.0320710131       1 (B1) A      2 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0320710131       1 (B1) A      2 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0320710131       2 (A1) B      1 (B1) A    ->    2 (B1) A      2 (B1) B     
+  0.0320710131       2 (A1) B      1 (B1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0320710131       1 (B1) B      2 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0320710131       1 (B1) B      2 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0134987701       2 (A1) A      1 (B1) B    ->    4 (A1) A      4 (A1) B     
+  0.0134987701       2 (A1) A      1 (B1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0134987701       1 (B1) A      2 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.0134987701       1 (B1) A      2 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0134987701       2 (A1) B      1 (B1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0134987701       2 (A1) B      1 (B1) A    ->    4 (A1) B      4 (A1) A     
+  0.0134987701       1 (B1) B      2 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0134987701       1 (B1) B      2 (A1) A    ->    4 (A1) B      4 (A1) A     
+  0.0114707155       2 (A1) A      3 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0114707155       3 (A1) A      2 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0114707155       2 (A1) A      3 (A1) A    ->    2 (B1) A      4 (A1) A     
+  0.0114707155       3 (A1) A      2 (A1) A    ->    2 (B1) A      4 (A1) A     
+  0.0114707155       2 (A1) B      3 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0114707155       3 (A1) B      2 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0114707155       2 (A1) B      3 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0114707155       3 (A1) B      2 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0108689067       2 (A1) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0108689067       3 (A1) A      2 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0108689067       3 (A1) A      2 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0108689067       2 (A1) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0108689067       3 (A1) B      2 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0108689067       2 (A1) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0108689067       2 (A1) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0108689067       3 (A1) B      2 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0072694487       1 (B2) A      1 (B2) B    ->    4 (A1) A      2 (B1) B     
+ -0.0072694487       1 (B2) A      1 (B2) B    ->    2 (B1) A      4 (A1) B     
+  0.0072694487       1 (B2) A      1 (B2) B    ->    4 (A1) B      2 (B1) A     
+  0.0072694487       1 (B2) A      1 (B2) B    ->    2 (B1) B      4 (A1) A     
+  0.0072694487       1 (B2) B      1 (B2) A    ->    4 (A1) A      2 (B1) B     
+  0.0072694487       1 (B2) B      1 (B2) A    ->    2 (B1) A      4 (A1) B     
+ -0.0072694487       1 (B2) B      1 (B2) A    ->    4 (A1) B      2 (B1) A     
+ -0.0072694487       1 (B2) B      1 (B2) A    ->    2 (B1) B      4 (A1) A     
+ -0.0043926015       2 (A1) A      2 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0043926015       2 (A1) A      2 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0043926015       2 (A1) A      2 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0043926015       2 (A1) A      2 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0043926015       2 (A1) B      2 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0043926015       2 (A1) B      2 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0043926015       2 (A1) B      2 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0043926015       2 (A1) B      2 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0006314992       3 (A1) A      2 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0006314992       2 (A1) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0006314992       2 (A1) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0006314992       3 (A1) A      2 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0006314992       2 (A1) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0006314992       3 (A1) B      2 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0006314992       3 (A1) B      2 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0006314992       2 (A1) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0001738272       1 (A1) A      1 (B1) B    ->    4 (A1) A      4 (A1) B     
+  0.0001738272       1 (A1) A      1 (B1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0001738272       1 (B1) A      1 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.0001738272       1 (B1) A      1 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0001738272       1 (A1) B      1 (B1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0001738272       1 (A1) B      1 (B1) A    ->    4 (A1) B      4 (A1) A     
+  0.0001738272       1 (B1) B      1 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0001738272       1 (B1) B      1 (A1) A    ->    4 (A1) B      4 (A1) A     
+  0.0001206503       3 (A1) A      1 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0001206503       1 (A1) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0001206503       1 (A1) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0001206503       3 (A1) A      1 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0001206503       1 (A1) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0001206503       3 (A1) B      1 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0001206503       3 (A1) B      1 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0001206503       1 (A1) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+  0.0001192020       1 (A1) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0001192020       3 (A1) A      1 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0001192020       3 (A1) A      1 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0001192020       1 (A1) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0001192020       3 (A1) B      1 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0001192020       1 (A1) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0001192020       1 (A1) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0001192020       3 (A1) B      1 (A1) A    ->    2 (B1) B      4 (A1) A     
+  0.0000945648       1 (A1) A      2 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0000945648       2 (A1) A      1 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0000945648       1 (A1) A      2 (A1) A    ->    2 (B1) A      4 (A1) A     
+  0.0000945648       2 (A1) A      1 (A1) A    ->    2 (B1) A      4 (A1) A     
+  0.0000945648       1 (A1) B      2 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0000945648       2 (A1) B      1 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0000945648       1 (A1) B      2 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0000945648       2 (A1) B      1 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0000614625       1 (A1) A      2 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0000614625       2 (A1) A      1 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0000614625       2 (A1) A      1 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0000614625       1 (A1) A      2 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0000614625       2 (A1) B      1 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0000614625       1 (A1) B      2 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0000614625       1 (A1) B      2 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0000614625       2 (A1) B      1 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0000564022       1 (A1) A      1 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0000564022       1 (A1) A      1 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0000564022       1 (A1) A      1 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0000564022       1 (A1) A      1 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0000564022       1 (A1) B      1 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0000564022       1 (A1) B      1 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0000564022       1 (A1) B      1 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0000564022       1 (A1) B      1 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0000387506       1 (A1) A      1 (B1) B    ->    2 (B1) A      2 (B1) B     
+  0.0000387506       1 (A1) A      1 (B1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0000387506       1 (B1) A      1 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0000387506       1 (B1) A      1 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0000387506       1 (A1) B      1 (B1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0000387506       1 (A1) B      1 (B1) A    ->    2 (B1) B      2 (B1) A     
+  0.0000387506       1 (B1) B      1 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0000387506       1 (B1) B      1 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0000344838       2 (A1) A      1 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0000344838       1 (A1) A      2 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0000344838       1 (A1) A      2 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0000344838       2 (A1) A      1 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0000344838       1 (A1) B      2 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0000344838       2 (A1) B      1 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0000344838       2 (A1) B      1 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0000344838       1 (A1) B      2 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0000026102       1 (A1) A      3 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0000026102       3 (A1) A      1 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0000026102       1 (A1) A      3 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0000026102       3 (A1) A      1 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0000026102       1 (A1) B      3 (A1) B    ->    4 (A1) B      2 (B1) B     
+  0.0000026102       3 (A1) B      1 (A1) B    ->    4 (A1) B      2 (B1) B     
+  0.0000026102       1 (A1) B      3 (A1) B    ->    2 (B1) B      4 (A1) B     
+ -0.0000026102       3 (A1) B      1 (A1) B    ->    2 (B1) B      4 (A1) B     
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A1)    -20.3090
+               2       Occ  Alpha       2 (A1)     -1.1429
+               5       Occ  Alpha       3 (A1)     -0.3706
+               3       Occ  Alpha       1 (B1)     -0.4063
+               4       Occ  Alpha       1 (B2)     -0.3998
+               1       Occ  Beta        1 (A1)    -20.3090
+               2       Occ  Beta        2 (A1)     -1.1429
+               5       Occ  Beta        3 (A1)     -0.3706
+               3       Occ  Beta        1 (B1)     -0.4063
+               4       Occ  Beta        1 (B2)     -0.3998
+               6       Vir  Alpha       4 (A1)      0.2429
+               7       Vir  Alpha       2 (B1)      0.3072
+               6       Vir  Beta        4 (A1)      0.2429
+               7       Vir  Beta        2 (B1)      0.3072
+
+
+ EEs and amplitudes of EOMEE has be exported to fchk file
+Running a double precision version
+      EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     1.47e-03   8.4579   
+      1    0      2     3.01e-03   8.4580   
+      2    0      3     3.16e-04   8.4580   
+      3    1      4     8.18e-06   8.4581*  
+
+     Davidson procedure converged
+
+ Excited state properties for  EOMEE-CCSD transition 1/B1
+ Dipole moment (a.u.): 0.087282 (X 0.000000, Y 0.000000, Z -0.087282)
+ R-squared (a.u.): 27.636525 (XX 14.020564, YY 4.715375, ZZ 8.900586)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 5.000000, Tr(BB) 5.000000
+
+        Solving for EOMEE-CCSD B2 singlet states.
+
+Running a double precision version
+        EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using standard  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     6.76e-02   6.5868   
+      1    0      2     4.76e-02   3.1934   
+      2    0      3     1.61e-02   3.0041   
+      3    0      4     3.73e-04   2.9815   
+      4    0      5     6.62e-05   2.9812   
+      5    0      6     1.49e-05   2.9750   
+      6    1      7     2.96e-07   2.9751*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/B2
+ Total energy = -74.76314265 a.u.  Excitation energy = 2.97511974 eV.
+ R0^2 = 0.0000  R1^2 = 0.7769  R2^2 = 0.2231  Res^2 = 2.96e-07
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.6232625384       1 (B2) A                  ->    4 (A1) A                   
+ -0.6232625384       1 (B2) B                  ->    4 (A1) B                   
+  0.2230613808       3 (A1) A      1 (B2) B    ->    4 (A1) A      4 (A1) B     
+ -0.2230613808       3 (A1) A      1 (B2) B    ->    4 (A1) B      4 (A1) A     
+  0.2230613808       1 (B2) A      3 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.2230613808       1 (B2) A      3 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.2230613808       3 (A1) B      1 (B2) A    ->    4 (A1) A      4 (A1) B     
+  0.2230613808       3 (A1) B      1 (B2) A    ->    4 (A1) B      4 (A1) A     
+ -0.2230613808       1 (B2) B      3 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.2230613808       1 (B2) B      3 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.1685075529       1 (B1) A      1 (B2) B    ->    4 (A1) A      2 (B1) B     
+  0.1685075529       1 (B1) A      1 (B2) B    ->    2 (B1) B      4 (A1) A     
+ -0.1685075529       1 (B2) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+  0.1685075529       1 (B2) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+  0.1685075529       1 (B1) B      1 (B2) A    ->    2 (B1) A      4 (A1) B     
+ -0.1685075529       1 (B1) B      1 (B2) A    ->    4 (A1) B      2 (B1) A     
+  0.1685075529       1 (B2) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+ -0.1685075529       1 (B2) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+ -0.1530778914       1 (B1) A      1 (B2) B    ->    2 (B1) A      4 (A1) B     
+  0.1530778914       1 (B1) A      1 (B2) B    ->    4 (A1) B      2 (B1) A     
+ -0.1530778914       1 (B2) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+  0.1530778914       1 (B2) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+  0.1530778914       1 (B1) B      1 (B2) A    ->    4 (A1) A      2 (B1) B     
+ -0.1530778914       1 (B1) B      1 (B2) A    ->    2 (B1) B      4 (A1) A     
+  0.1530778914       1 (B2) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+ -0.1530778914       1 (B2) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+  0.0896582932       3 (A1) A      1 (B2) B    ->    2 (B1) A      2 (B1) B     
+ -0.0896582932       3 (A1) A      1 (B2) B    ->    2 (B1) B      2 (B1) A     
+  0.0896582932       1 (B2) A      3 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0896582932       1 (B2) A      3 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0896582932       3 (A1) B      1 (B2) A    ->    2 (B1) A      2 (B1) B     
+  0.0896582932       3 (A1) B      1 (B2) A    ->    2 (B1) B      2 (B1) A     
+ -0.0896582932       1 (B2) B      3 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0896582932       1 (B2) B      3 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0403792784       2 (A1) A      1 (B2) B    ->    4 (A1) A      4 (A1) B     
+ -0.0403792784       2 (A1) A      1 (B2) B    ->    4 (A1) B      4 (A1) A     
+  0.0403792784       1 (B2) A      2 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0403792784       1 (B2) A      2 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0403792784       2 (A1) B      1 (B2) A    ->    4 (A1) A      4 (A1) B     
+  0.0403792784       2 (A1) B      1 (B2) A    ->    4 (A1) B      4 (A1) A     
+ -0.0403792784       1 (B2) B      2 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.0403792784       1 (B2) B      2 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0158655556       1 (B1) A      1 (B2) A    ->    4 (A1) A      2 (B1) A     
+  0.0158655556       1 (B1) A      1 (B2) A    ->    2 (B1) A      4 (A1) A     
+  0.0158655556       1 (B2) A      1 (B1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0158655556       1 (B2) A      1 (B1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0158655556       1 (B1) B      1 (B2) B    ->    4 (A1) B      2 (B1) B     
+  0.0158655556       1 (B1) B      1 (B2) B    ->    2 (B1) B      4 (A1) B     
+  0.0158655556       1 (B2) B      1 (B1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0158655556       1 (B2) B      1 (B1) B    ->    2 (B1) B      4 (A1) B     
+  0.0062389442       2 (A1) A      1 (B2) B    ->    2 (B1) A      2 (B1) B     
+ -0.0062389442       2 (A1) A      1 (B2) B    ->    2 (B1) B      2 (B1) A     
+  0.0062389442       1 (B2) A      2 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0062389442       1 (B2) A      2 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0062389442       2 (A1) B      1 (B2) A    ->    2 (B1) A      2 (B1) B     
+  0.0062389442       2 (A1) B      1 (B2) A    ->    2 (B1) B      2 (B1) A     
+ -0.0062389442       1 (B2) B      2 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0062389442       1 (B2) B      2 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0002285374       1 (A1) A      1 (B2) B    ->    4 (A1) A      4 (A1) B     
+ -0.0002285374       1 (A1) A      1 (B2) B    ->    4 (A1) B      4 (A1) A     
+  0.0002285374       1 (B2) A      1 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0002285374       1 (B2) A      1 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0002285374       1 (A1) B      1 (B2) A    ->    4 (A1) A      4 (A1) B     
+  0.0002285374       1 (A1) B      1 (B2) A    ->    4 (A1) B      4 (A1) A     
+ -0.0002285374       1 (B2) B      1 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.0002285374       1 (B2) B      1 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0000649520       1 (A1) A      1 (B2) B    ->    2 (B1) A      2 (B1) B     
+  0.0000649520       1 (A1) A      1 (B2) B    ->    2 (B1) B      2 (B1) A     
+ -0.0000649520       1 (B2) A      1 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0000649520       1 (B2) A      1 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0000649520       1 (A1) B      1 (B2) A    ->    2 (B1) A      2 (B1) B     
+ -0.0000649520       1 (A1) B      1 (B2) A    ->    2 (B1) B      2 (B1) A     
+  0.0000649520       1 (B2) B      1 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0000649520       1 (B2) B      1 (A1) A    ->    2 (B1) B      2 (B1) A     
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A1)    -20.3090
+               2       Occ  Alpha       2 (A1)     -1.1429
+               5       Occ  Alpha       3 (A1)     -0.3706
+               3       Occ  Alpha       1 (B1)     -0.4063
+               4       Occ  Alpha       1 (B2)     -0.3998
+               1       Occ  Beta        1 (A1)    -20.3090
+               2       Occ  Beta        2 (A1)     -1.1429
+               5       Occ  Beta        3 (A1)     -0.3706
+               3       Occ  Beta        1 (B1)     -0.4063
+               4       Occ  Beta        1 (B2)     -0.3998
+               6       Vir  Alpha       4 (A1)      0.2429
+               7       Vir  Alpha       2 (B1)      0.3072
+               6       Vir  Beta        4 (A1)      0.2429
+               7       Vir  Beta        2 (B1)      0.3072
+
+
+ EEs and amplitudes of EOMEE has be exported to fchk file
+Running a double precision version
+      EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     2.16e-03   2.9751   
+      1    0      2     4.85e-04   2.9754   
+      2    0      3     2.34e-04   2.9753   
+      3    0      4     6.22e-05   2.9753   
+      4    1      5     1.67e-06   2.9753*  
+
+     Davidson procedure converged
+
+ Excited state properties for  EOMEE-CCSD transition 1/B2
+ Dipole moment (a.u.): 0.023269 (X 0.000000, Y 0.000000, Z -0.023269)
+ R-squared (a.u.): 27.900448 (XX 14.300566, YY 4.174176, ZZ 9.425706)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 5.000000, Tr(BB) 5.000000
+
+        Solving for EOMEE-CCSD A1 triplet states.
+
+Running a double precision version
+        EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using standard  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     3.61e-02   5.9376   
+      1    0      2     2.03e-01   4.6153   
+      2    0      3     3.76e-02   3.6671   
+      3    0      4     3.28e-03   3.3938   
+      4    0      5     1.89e-03   3.3097   
+      5    0      6     3.29e-04   3.3016   
+      6    0      7     1.81e-05   3.3012   
+      7    1      8     8.15e-07   3.3005*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/A1
+ Total energy = -74.75118445 a.u.  Excitation energy = 3.30051873 eV.
+ R0^2 = 0.0000  R1^2 = 0.9940  R2^2 = 0.0060  Res^2 = 8.15e-07
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.5911878731       3 (A1) A                  ->    4 (A1) A                   
+  0.5911878731       3 (A1) B                  ->    4 (A1) B                   
+  0.3823597060       1 (B1) A                  ->    2 (B1) A                   
+ -0.3823597060       1 (B1) B                  ->    2 (B1) B                   
+ -0.0357596206       2 (A1) A                  ->    4 (A1) A                   
+  0.0357596206       2 (A1) B                  ->    4 (A1) B                   
+ -0.0004180381       1 (A1) A                  ->    4 (A1) A                   
+  0.0004180381       1 (A1) B                  ->    4 (A1) B                   
+ -0.0399333495       3 (A1) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+  0.0399333495       3 (A1) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+  0.0399333495       1 (B1) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0399333495       1 (B1) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0399333495       3 (A1) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+  0.0399333495       3 (A1) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+  0.0399333495       1 (B1) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0399333495       1 (B1) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0291908671       3 (A1) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+  0.0291908671       3 (A1) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+  0.0291908671       1 (B1) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0291908671       1 (B1) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0291908671       3 (A1) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+  0.0291908671       3 (A1) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+  0.0291908671       1 (B1) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0291908671       1 (B1) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+  0.0210779666       2 (A1) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0210779666       2 (A1) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0210779666       1 (B1) A      2 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0210779666       1 (B1) A      2 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0210779666       2 (A1) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0210779666       2 (A1) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0210779666       1 (B1) B      2 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0210779666       1 (B1) B      2 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0088882868       2 (A1) A      3 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0088882868       3 (A1) A      2 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0088882868       2 (A1) A      3 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0088882868       3 (A1) A      2 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0088882868       3 (A1) B      2 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0088882868       2 (A1) B      3 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0088882868       2 (A1) B      3 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0088882868       3 (A1) B      2 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0060211660       2 (A1) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+  0.0060211660       2 (A1) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+  0.0060211660       1 (B1) A      2 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0060211660       1 (B1) A      2 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0060211660       2 (A1) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+  0.0060211660       2 (A1) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+  0.0060211660       1 (B1) B      2 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0060211660       1 (B1) B      2 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0033845302       2 (A1) A      1 (B1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0033845302       2 (A1) A      1 (B1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0033845302       1 (B1) A      2 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0033845302       1 (B1) A      2 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0033845302       2 (A1) B      1 (B1) B    ->    4 (A1) B      2 (B1) B     
+  0.0033845302       2 (A1) B      1 (B1) B    ->    2 (B1) B      4 (A1) B     
+  0.0033845302       1 (B1) B      2 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0033845302       1 (B1) B      2 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0010485156       2 (A1) A      3 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0010485156       3 (A1) A      2 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0010485156       2 (A1) A      3 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0010485156       3 (A1) A      2 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0010485156       3 (A1) B      2 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.0010485156       2 (A1) B      3 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0010485156       2 (A1) B      3 (A1) A    ->    4 (A1) B      4 (A1) A     
+  0.0010485156       3 (A1) B      2 (A1) A    ->    4 (A1) B      4 (A1) A     
+  0.0003084751       1 (A1) A      3 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0003084751       3 (A1) A      1 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0003084751       1 (A1) A      3 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0003084751       3 (A1) A      1 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0003084751       3 (A1) B      1 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.0003084751       1 (A1) B      3 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0003084751       1 (A1) B      3 (A1) A    ->    4 (A1) B      4 (A1) A     
+  0.0003084751       3 (A1) B      1 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0001827767       1 (A1) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+  0.0001827767       1 (A1) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+  0.0001827767       1 (B1) A      1 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0001827767       1 (B1) A      1 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0001827767       1 (A1) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+  0.0001827767       1 (A1) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+  0.0001827767       1 (B1) B      1 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0001827767       1 (B1) B      1 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0001421008       3 (A1) A      1 (B1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0001421008       3 (A1) A      1 (B1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0001421008       1 (B1) A      3 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0001421008       1 (B1) A      3 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0001421008       3 (A1) B      1 (B1) B    ->    4 (A1) B      2 (B1) B     
+  0.0001421008       3 (A1) B      1 (B1) B    ->    2 (B1) B      4 (A1) B     
+  0.0001421008       1 (B1) B      3 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0001421008       1 (B1) B      3 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0000673772       1 (A1) A      3 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0000673772       3 (A1) A      1 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0000673772       1 (A1) A      3 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0000673772       3 (A1) A      1 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0000673772       3 (A1) B      1 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0000673772       1 (A1) B      3 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0000673772       1 (A1) B      3 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0000673772       3 (A1) B      1 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0000661969       1 (A1) A      1 (B1) A    ->    4 (A1) A      2 (B1) A     
+  0.0000661969       1 (A1) A      1 (B1) A    ->    2 (B1) A      4 (A1) A     
+  0.0000661969       1 (B1) A      1 (A1) A    ->    4 (A1) A      2 (B1) A     
+ -0.0000661969       1 (B1) A      1 (A1) A    ->    2 (B1) A      4 (A1) A     
+  0.0000661969       1 (A1) B      1 (B1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0000661969       1 (A1) B      1 (B1) B    ->    2 (B1) B      4 (A1) B     
+ -0.0000661969       1 (B1) B      1 (A1) B    ->    4 (A1) B      2 (B1) B     
+  0.0000661969       1 (B1) B      1 (A1) B    ->    2 (B1) B      4 (A1) B     
+ -0.0000207053       1 (A1) A      2 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0000207053       2 (A1) A      1 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0000207053       1 (A1) A      2 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0000207053       2 (A1) A      1 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0000207053       2 (A1) B      1 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0000207053       1 (A1) B      2 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0000207053       1 (A1) B      2 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0000207053       2 (A1) B      1 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0000119407       1 (A1) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0000119407       1 (A1) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0000119407       1 (B1) A      1 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0000119407       1 (B1) A      1 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0000119407       1 (A1) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0000119407       1 (A1) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0000119407       1 (B1) B      1 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0000119407       1 (B1) B      1 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0000116388       1 (A1) A      2 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.0000116388       2 (A1) A      1 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.0000116388       1 (A1) A      2 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0000116388       2 (A1) A      1 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0000116388       2 (A1) B      1 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0000116388       1 (A1) B      2 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.0000116388       1 (A1) B      2 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0000116388       2 (A1) B      1 (A1) A    ->    4 (A1) B      4 (A1) A     
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A1)    -20.3090
+               2       Occ  Alpha       2 (A1)     -1.1429
+               5       Occ  Alpha       3 (A1)     -0.3706
+               3       Occ  Alpha       1 (B1)     -0.4063
+               1       Occ  Beta        1 (A1)    -20.3090
+               2       Occ  Beta        2 (A1)     -1.1429
+               5       Occ  Beta        3 (A1)     -0.3706
+               3       Occ  Beta        1 (B1)     -0.4063
+               6       Vir  Alpha       4 (A1)      0.2429
+               7       Vir  Alpha       2 (B1)      0.3072
+               6       Vir  Beta        4 (A1)      0.2429
+               7       Vir  Beta        2 (B1)      0.3072
+
+
+ EEs and amplitudes of EOMEE has be exported to fchk file
+Running a double precision version
+      EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     6.52e-04   3.3005   
+      1    0      2     1.39e-03   3.3004   
+      2    0      3     7.84e-05   3.3004   
+      3    1      4     1.94e-06   3.3004*  
+
+     Davidson procedure converged
+
+ Excited state properties for  EOMEE-CCSD transition 1/A1
+ Dipole moment (a.u.): 0.095153 (X 0.000000, Y 0.000000, Z -0.095153)
+ R-squared (a.u.): 27.695677 (XX 14.066652, YY 4.740268, ZZ 8.888757)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 5.000000, Tr(BB) 5.000000
+
+        Solving for EOMEE-CCSD A2 triplet states.
+
+Running a double precision version
+        EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using standard  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     4.37e-02   6.1849   
+      1    0      2     1.65e-01   4.1213   
+      2    0      3     1.35e-02   3.6764   
+      3    0      4     3.14e-04   3.6056   
+      4    0      5     1.93e-05   3.6084   
+      5    0      6     5.57e-05   3.6078   
+      6    1      7     1.41e-06   3.6074*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/A2
+ Total energy = -74.73990822 a.u.  Excitation energy = 3.60736069 eV.
+ R0^2 = 0.0000  R1^2 = 0.8176  R2^2 = 0.1824  Res^2 = 1.41e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.6393768227       1 (B2) A                  ->    2 (B1) A                   
+ -0.6393768227       1 (B2) B                  ->    2 (B1) B                   
+  0.2136930538       3 (A1) A      1 (B2) B    ->    4 (A1) A      2 (B1) B     
+ -0.2136930538       3 (A1) A      1 (B2) B    ->    2 (B1) B      4 (A1) A     
+ -0.2136930538       1 (B2) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.2136930538       1 (B2) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.2136930538       3 (A1) B      1 (B2) A    ->    2 (B1) A      4 (A1) B     
+ -0.2136930538       3 (A1) B      1 (B2) A    ->    4 (A1) B      2 (B1) A     
+ -0.2136930538       1 (B2) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.2136930538       1 (B2) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.1554108469       1 (B1) A      1 (B2) B    ->    4 (A1) A      4 (A1) B     
+  0.1554108469       1 (B1) A      1 (B2) B    ->    4 (A1) B      4 (A1) A     
+  0.1554108469       1 (B2) A      1 (B1) B    ->    4 (A1) A      4 (A1) B     
+ -0.1554108469       1 (B2) A      1 (B1) B    ->    4 (A1) B      4 (A1) A     
+ -0.1554108469       1 (B1) B      1 (B2) A    ->    4 (A1) A      4 (A1) B     
+  0.1554108469       1 (B1) B      1 (B2) A    ->    4 (A1) B      4 (A1) A     
+  0.1554108469       1 (B2) B      1 (B1) A    ->    4 (A1) A      4 (A1) B     
+ -0.1554108469       1 (B2) B      1 (B1) A    ->    4 (A1) B      4 (A1) A     
+ -0.1088743360       1 (B1) A      1 (B2) B    ->    2 (B1) A      2 (B1) B     
+  0.1088743360       1 (B1) A      1 (B2) B    ->    2 (B1) B      2 (B1) A     
+  0.1088743360       1 (B2) A      1 (B1) B    ->    2 (B1) A      2 (B1) B     
+ -0.1088743360       1 (B2) A      1 (B1) B    ->    2 (B1) B      2 (B1) A     
+ -0.1088743360       1 (B1) B      1 (B2) A    ->    2 (B1) A      2 (B1) B     
+  0.1088743360       1 (B1) B      1 (B2) A    ->    2 (B1) B      2 (B1) A     
+  0.1088743360       1 (B2) B      1 (B1) A    ->    2 (B1) A      2 (B1) B     
+ -0.1088743360       1 (B2) B      1 (B1) A    ->    2 (B1) B      2 (B1) A     
+  0.0921827778       3 (A1) A      1 (B2) B    ->    2 (B1) A      4 (A1) B     
+ -0.0921827778       3 (A1) A      1 (B2) B    ->    4 (A1) B      2 (B1) A     
+ -0.0921827778       1 (B2) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0921827778       1 (B2) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0921827778       3 (A1) B      1 (B2) A    ->    4 (A1) A      2 (B1) B     
+ -0.0921827778       3 (A1) B      1 (B2) A    ->    2 (B1) B      4 (A1) A     
+ -0.0921827778       1 (B2) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0921827778       1 (B2) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0274352964       2 (A1) A      1 (B2) B    ->    4 (A1) A      2 (B1) B     
+ -0.0274352964       2 (A1) A      1 (B2) B    ->    2 (B1) B      4 (A1) A     
+ -0.0274352964       1 (B2) A      2 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0274352964       1 (B2) A      2 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0274352964       2 (A1) B      1 (B2) A    ->    2 (B1) A      4 (A1) B     
+ -0.0274352964       2 (A1) B      1 (B2) A    ->    4 (A1) B      2 (B1) A     
+ -0.0274352964       1 (B2) B      2 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0274352964       1 (B2) B      2 (A1) A    ->    2 (B1) B      4 (A1) A     
+  0.0133375942       3 (A1) A      1 (B2) A    ->    4 (A1) A      2 (B1) A     
+ -0.0133375942       3 (A1) A      1 (B2) A    ->    2 (B1) A      4 (A1) A     
+ -0.0133375942       1 (B2) A      3 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0133375942       1 (B2) A      3 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0133375942       3 (A1) B      1 (B2) B    ->    4 (A1) B      2 (B1) B     
+  0.0133375942       3 (A1) B      1 (B2) B    ->    2 (B1) B      4 (A1) B     
+  0.0133375942       1 (B2) B      3 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0133375942       1 (B2) B      3 (A1) B    ->    2 (B1) B      4 (A1) B     
+ -0.0092024047       2 (A1) A      1 (B2) B    ->    2 (B1) A      4 (A1) B     
+  0.0092024047       2 (A1) A      1 (B2) B    ->    4 (A1) B      2 (B1) A     
+  0.0092024047       1 (B2) A      2 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0092024047       1 (B2) A      2 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0092024047       2 (A1) B      1 (B2) A    ->    4 (A1) A      2 (B1) B     
+  0.0092024047       2 (A1) B      1 (B2) A    ->    2 (B1) B      4 (A1) A     
+  0.0092024047       1 (B2) B      2 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0092024047       1 (B2) B      2 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0036555955       2 (A1) A      1 (B2) A    ->    4 (A1) A      2 (B1) A     
+ -0.0036555955       2 (A1) A      1 (B2) A    ->    2 (B1) A      4 (A1) A     
+ -0.0036555955       1 (B2) A      2 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0036555955       1 (B2) A      2 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0036555955       2 (A1) B      1 (B2) B    ->    4 (A1) B      2 (B1) B     
+  0.0036555955       2 (A1) B      1 (B2) B    ->    2 (B1) B      4 (A1) B     
+  0.0036555955       1 (B2) B      2 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0036555955       1 (B2) B      2 (A1) B    ->    2 (B1) B      4 (A1) B     
+ -0.0002899322       1 (A1) A      1 (B2) B    ->    2 (B1) A      4 (A1) B     
+  0.0002899322       1 (A1) A      1 (B2) B    ->    4 (A1) B      2 (B1) A     
+  0.0002899322       1 (B2) A      1 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0002899322       1 (B2) A      1 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0002899322       1 (A1) B      1 (B2) A    ->    4 (A1) A      2 (B1) B     
+  0.0002899322       1 (A1) B      1 (B2) A    ->    2 (B1) B      4 (A1) A     
+  0.0002899322       1 (B2) B      1 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0002899322       1 (B2) B      1 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0001101997       1 (A1) A      1 (B2) A    ->    4 (A1) A      2 (B1) A     
+ -0.0001101997       1 (A1) A      1 (B2) A    ->    2 (B1) A      4 (A1) A     
+ -0.0001101997       1 (B2) A      1 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0001101997       1 (B2) A      1 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0001101997       1 (A1) B      1 (B2) B    ->    4 (A1) B      2 (B1) B     
+  0.0001101997       1 (A1) B      1 (B2) B    ->    2 (B1) B      4 (A1) B     
+  0.0001101997       1 (B2) B      1 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0001101997       1 (B2) B      1 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0000986247       1 (A1) A      1 (B2) B    ->    4 (A1) A      2 (B1) B     
+ -0.0000986247       1 (A1) A      1 (B2) B    ->    2 (B1) B      4 (A1) A     
+ -0.0000986247       1 (B2) A      1 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0000986247       1 (B2) A      1 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0000986247       1 (A1) B      1 (B2) A    ->    2 (B1) A      4 (A1) B     
+ -0.0000986247       1 (A1) B      1 (B2) A    ->    4 (A1) B      2 (B1) A     
+ -0.0000986247       1 (B2) B      1 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0000986247       1 (B2) B      1 (A1) A    ->    2 (B1) B      4 (A1) A     
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A1)    -20.3090
+               2       Occ  Alpha       2 (A1)     -1.1429
+               5       Occ  Alpha       3 (A1)     -0.3706
+               3       Occ  Alpha       1 (B1)     -0.4063
+               4       Occ  Alpha       1 (B2)     -0.3998
+               1       Occ  Beta        1 (A1)    -20.3090
+               2       Occ  Beta        2 (A1)     -1.1429
+               5       Occ  Beta        3 (A1)     -0.3706
+               3       Occ  Beta        1 (B1)     -0.4063
+               4       Occ  Beta        1 (B2)     -0.3998
+               6       Vir  Alpha       4 (A1)      0.2429
+               7       Vir  Alpha       2 (B1)      0.3072
+               6       Vir  Beta        4 (A1)      0.2429
+               7       Vir  Beta        2 (B1)      0.3072
+
+
+ EEs and amplitudes of EOMEE has be exported to fchk file
+Running a double precision version
+      EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     1.59e-03   3.6074   
+      1    0      2     1.81e-03   3.6069   
+      2    0      3     4.37e-04   3.6070   
+      3    0      4     1.79e-05   3.6070   
+      4    1      5     2.16e-06   3.6070*  
+
+     Davidson procedure converged
+
+ Excited state properties for  EOMEE-CCSD transition 1/A2
+ Dipole moment (a.u.): 0.054670 (X 0.000000, Y 0.000000, Z -0.054670)
+ R-squared (a.u.): 28.192305 (XX 14.689090, YY 4.157135, ZZ 9.346080)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 5.000000, Tr(BB) 5.000000
+
+        Solving for EOMEE-CCSD B1 triplet states.
+
+Running a double precision version
+        EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using standard  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     4.16e-02   7.9652   
+      1    0      2     3.53e-01   7.1949   
+      2    0      3     1.02e-01   5.5912   
+      3    0      4     1.28e-02   5.0088   
+      4    0      5     2.39e-02   4.7529   
+      5    0      6     3.81e-03   4.6992   
+      6    0      7     4.83e-04   4.6847   
+      7    0      8     3.63e-04   4.6824   
+      8    0      9     1.41e-04   4.6833   
+      9    1      10    2.37e-06   4.6838*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/B1
+ Total energy = -74.70034821 a.u.  Excitation energy = 4.68384327 eV.
+ R0^2 = 0.0000  R1^2 = 0.9295  R2^2 = 0.0705  Res^2 = 2.37e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.4831082151       3 (A1) A                  ->    2 (B1) A                   
+  0.4831082151       3 (A1) B                  ->    2 (B1) B                   
+  0.4807654153       1 (B1) A                  ->    4 (A1) A                   
+ -0.4807654153       1 (B1) B                  ->    4 (A1) B                   
+ -0.0152445263       2 (A1) A                  ->    2 (B1) A                   
+  0.0152445263       2 (A1) B                  ->    2 (B1) B                   
+ -0.0001620169       1 (A1) A                  ->    2 (B1) A                   
+  0.0001620169       1 (A1) B                  ->    2 (B1) B                   
+ -0.1087966844       3 (A1) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.1087966844       3 (A1) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.1087966844       3 (A1) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.1087966844       3 (A1) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.1087966844       3 (A1) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.1087966844       3 (A1) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.1087966844       3 (A1) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.1087966844       3 (A1) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0964493510       3 (A1) A      1 (B1) B    ->    4 (A1) A      4 (A1) B     
+  0.0964493510       3 (A1) A      1 (B1) B    ->    4 (A1) B      4 (A1) A     
+  0.0964493510       1 (B1) A      3 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0964493510       1 (B1) A      3 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0964493510       3 (A1) B      1 (B1) A    ->    4 (A1) A      4 (A1) B     
+  0.0964493510       3 (A1) B      1 (B1) A    ->    4 (A1) B      4 (A1) A     
+  0.0964493510       1 (B1) B      3 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0964493510       1 (B1) B      3 (A1) A    ->    4 (A1) B      4 (A1) A     
+  0.0873663955       3 (A1) A      1 (B1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0873663955       3 (A1) A      1 (B1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0873663955       1 (B1) A      3 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0873663955       1 (B1) A      3 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0873663955       3 (A1) B      1 (B1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0873663955       3 (A1) B      1 (B1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0873663955       1 (B1) B      3 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0873663955       1 (B1) B      3 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0763130628       1 (B1) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0763130628       1 (B1) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+  0.0763130628       1 (B1) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0763130628       1 (B1) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0763130628       1 (B1) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+  0.0763130628       1 (B1) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0763130628       1 (B1) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+  0.0763130628       1 (B1) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0167931974       2 (A1) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0167931974       3 (A1) A      2 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0167931974       3 (A1) A      2 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0167931974       2 (A1) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0167931974       3 (A1) B      2 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0167931974       2 (A1) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0167931974       2 (A1) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0167931974       3 (A1) B      2 (A1) A    ->    2 (B1) B      4 (A1) A     
+  0.0154722297       2 (A1) A      1 (B1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0154722297       2 (A1) A      1 (B1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0154722297       1 (B1) A      2 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0154722297       1 (B1) A      2 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0154722297       2 (A1) B      1 (B1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0154722297       2 (A1) B      1 (B1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0154722297       1 (B1) B      2 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0154722297       1 (B1) B      2 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0100292794       2 (A1) A      1 (B1) B    ->    4 (A1) A      4 (A1) B     
+  0.0100292794       2 (A1) A      1 (B1) B    ->    4 (A1) B      4 (A1) A     
+  0.0100292794       1 (B1) A      2 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0100292794       1 (B1) A      2 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0100292794       2 (A1) B      1 (B1) A    ->    4 (A1) A      4 (A1) B     
+  0.0100292794       2 (A1) B      1 (B1) A    ->    4 (A1) B      4 (A1) A     
+  0.0100292794       1 (B1) B      2 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0100292794       1 (B1) B      2 (A1) A    ->    4 (A1) B      4 (A1) A     
+  0.0028024415       2 (A1) A      2 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0028024415       2 (A1) A      2 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0028024415       2 (A1) A      2 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0028024415       2 (A1) A      2 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0028024415       2 (A1) B      2 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0028024415       2 (A1) B      2 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0028024415       2 (A1) B      2 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0028024415       2 (A1) B      2 (A1) A    ->    2 (B1) B      4 (A1) A     
+  0.0027625252       1 (B2) A      1 (B2) B    ->    4 (A1) A      2 (B1) B     
+ -0.0027625252       1 (B2) A      1 (B2) B    ->    2 (B1) A      4 (A1) B     
+  0.0027625252       1 (B2) A      1 (B2) B    ->    4 (A1) B      2 (B1) A     
+ -0.0027625252       1 (B2) A      1 (B2) B    ->    2 (B1) B      4 (A1) A     
+ -0.0027625252       1 (B2) B      1 (B2) A    ->    4 (A1) A      2 (B1) B     
+  0.0027625252       1 (B2) B      1 (B2) A    ->    2 (B1) A      4 (A1) B     
+ -0.0027625252       1 (B2) B      1 (B2) A    ->    4 (A1) B      2 (B1) A     
+  0.0027625252       1 (B2) B      1 (B2) A    ->    2 (B1) B      4 (A1) A     
+ -0.0019703694       2 (A1) A      3 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0019703694       3 (A1) A      2 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0019703694       2 (A1) A      3 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0019703694       3 (A1) A      2 (A1) A    ->    2 (B1) A      4 (A1) A     
+  0.0019703694       2 (A1) B      3 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0019703694       3 (A1) B      2 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0019703694       2 (A1) B      3 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0019703694       3 (A1) B      2 (A1) B    ->    2 (B1) B      4 (A1) B     
+ -0.0011779406       3 (A1) A      2 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0011779406       2 (A1) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0011779406       2 (A1) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0011779406       3 (A1) A      2 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0011779406       2 (A1) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0011779406       3 (A1) B      2 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0011779406       3 (A1) B      2 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0011779406       2 (A1) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0002416703       1 (A1) A      1 (B1) B    ->    4 (A1) A      4 (A1) B     
+  0.0002416703       1 (A1) A      1 (B1) B    ->    4 (A1) B      4 (A1) A     
+  0.0002416703       1 (B1) A      1 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0002416703       1 (B1) A      1 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0002416703       1 (A1) B      1 (B1) A    ->    4 (A1) A      4 (A1) B     
+  0.0002416703       1 (A1) B      1 (B1) A    ->    4 (A1) B      4 (A1) A     
+  0.0002416703       1 (B1) B      1 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0002416703       1 (B1) B      1 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0002381222       3 (A1) A      1 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0002381222       1 (A1) A      3 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0002381222       1 (A1) A      3 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0002381222       3 (A1) A      1 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0002381222       1 (A1) B      3 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0002381222       3 (A1) B      1 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0002381222       3 (A1) B      1 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0002381222       1 (A1) B      3 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0001119855       1 (A1) A      1 (B1) B    ->    2 (B1) A      2 (B1) B     
+  0.0001119855       1 (A1) A      1 (B1) B    ->    2 (B1) B      2 (B1) A     
+  0.0001119855       1 (B1) A      1 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0001119855       1 (B1) A      1 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0001119855       1 (A1) B      1 (B1) A    ->    2 (B1) A      2 (B1) B     
+  0.0001119855       1 (A1) B      1 (B1) A    ->    2 (B1) B      2 (B1) A     
+  0.0001119855       1 (B1) B      1 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0001119855       1 (B1) B      1 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0000564743       1 (A1) A      2 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0000564743       2 (A1) A      1 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0000564743       2 (A1) A      1 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0000564743       1 (A1) A      2 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0000564743       2 (A1) B      1 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0000564743       1 (A1) B      2 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0000564743       1 (A1) B      2 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0000564743       2 (A1) B      1 (A1) A    ->    2 (B1) B      4 (A1) A     
+  0.0000445990       2 (A1) A      1 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0000445990       1 (A1) A      2 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0000445990       1 (A1) A      2 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0000445990       2 (A1) A      1 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0000445990       1 (A1) B      2 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0000445990       2 (A1) B      1 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0000445990       2 (A1) B      1 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0000445990       1 (A1) B      2 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0000436755       1 (A1) A      3 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0000436755       3 (A1) A      1 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0000436755       1 (A1) A      3 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0000436755       3 (A1) A      1 (A1) A    ->    2 (B1) A      4 (A1) A     
+  0.0000436755       1 (A1) B      3 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0000436755       3 (A1) B      1 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0000436755       1 (A1) B      3 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0000436755       3 (A1) B      1 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0000390847       1 (A1) A      1 (A1) B    ->    4 (A1) A      2 (B1) B     
+ -0.0000390847       1 (A1) A      1 (A1) B    ->    2 (B1) A      4 (A1) B     
+  0.0000390847       1 (A1) A      1 (A1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0000390847       1 (A1) A      1 (A1) B    ->    2 (B1) B      4 (A1) A     
+ -0.0000390847       1 (A1) B      1 (A1) A    ->    4 (A1) A      2 (B1) B     
+  0.0000390847       1 (A1) B      1 (A1) A    ->    2 (B1) A      4 (A1) B     
+ -0.0000390847       1 (A1) B      1 (A1) A    ->    4 (A1) B      2 (B1) A     
+  0.0000390847       1 (A1) B      1 (A1) A    ->    2 (B1) B      4 (A1) A     
+ -0.0000203608       1 (A1) A      2 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0000203608       2 (A1) A      1 (A1) A    ->    4 (A1) A      2 (B1) A     
+  0.0000203608       1 (A1) A      2 (A1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0000203608       2 (A1) A      1 (A1) A    ->    2 (B1) A      4 (A1) A     
+  0.0000203608       1 (A1) B      2 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0000203608       2 (A1) B      1 (A1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0000203608       1 (A1) B      2 (A1) B    ->    2 (B1) B      4 (A1) B     
+  0.0000203608       2 (A1) B      1 (A1) B    ->    2 (B1) B      4 (A1) B     
+ -0.0000079968       1 (A1) A      3 (A1) B    ->    4 (A1) A      2 (B1) B     
+  0.0000079968       3 (A1) A      1 (A1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0000079968       3 (A1) A      1 (A1) B    ->    4 (A1) B      2 (B1) A     
+  0.0000079968       1 (A1) A      3 (A1) B    ->    2 (B1) B      4 (A1) A     
+  0.0000079968       3 (A1) B      1 (A1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0000079968       1 (A1) B      3 (A1) A    ->    2 (B1) A      4 (A1) B     
+  0.0000079968       1 (A1) B      3 (A1) A    ->    4 (A1) B      2 (B1) A     
+ -0.0000079968       3 (A1) B      1 (A1) A    ->    2 (B1) B      4 (A1) A     
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A1)    -20.3090
+               2       Occ  Alpha       2 (A1)     -1.1429
+               5       Occ  Alpha       3 (A1)     -0.3706
+               3       Occ  Alpha       1 (B1)     -0.4063
+               4       Occ  Alpha       1 (B2)     -0.3998
+               1       Occ  Beta        1 (A1)    -20.3090
+               2       Occ  Beta        2 (A1)     -1.1429
+               5       Occ  Beta        3 (A1)     -0.3706
+               3       Occ  Beta        1 (B1)     -0.4063
+               4       Occ  Beta        1 (B2)     -0.3998
+               6       Vir  Alpha       4 (A1)      0.2429
+               7       Vir  Alpha       2 (B1)      0.3072
+               6       Vir  Beta        4 (A1)      0.2429
+               7       Vir  Beta        2 (B1)      0.3072
+
+
+ EEs and amplitudes of EOMEE has be exported to fchk file
+Running a double precision version
+      EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     9.17e-04   4.6838   
+      1    0      2     3.84e-03   4.6835   
+      2    0      3     4.88e-04   4.6834   
+      3    0      4     1.40e-04   4.6834   
+      4    0      5     1.24e-04   4.6834   
+      5    0      6     2.30e-05   4.6835   
+      6    1      7     4.96e-06   4.6835*  
+
+     Davidson procedure converged
+
+ Excited state properties for  EOMEE-CCSD transition 1/B1
+ Dipole moment (a.u.): 0.096546 (X 0.000000, Y 0.000000, Z -0.096546)
+ R-squared (a.u.): 27.775847 (XX 14.053902, YY 4.734053, ZZ 8.987892)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 5.000000, Tr(BB) 5.000000
+
+        Solving for EOMEE-CCSD B2 triplet states.
+
+Running a double precision version
+        EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using standard  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     4.88e-02   5.0831   
+      1    0      2     2.19e-01   2.9782   
+      2    0      3     4.71e-03   2.5386   
+      3    0      4     8.33e-05   2.5004   
+      4    0      5     2.90e-05   2.5051   
+      5    0      6     5.58e-05   2.5020   
+      6    1      7     2.37e-07   2.5014*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/B2
+ Total energy = -74.78055126 a.u.  Excitation energy = 2.50140710 eV.
+ R0^2 = 0.0000  R1^2 = 0.8389  R2^2 = 0.1611  Res^2 = 2.37e-07
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.6476580595       1 (B2) A                  ->    4 (A1) A                   
+ -0.6476580595       1 (B2) B                  ->    4 (A1) B                   
+ -0.1928453514       1 (B1) A      1 (B2) B    ->    2 (B1) A      4 (A1) B     
+  0.1928453514       1 (B1) A      1 (B2) B    ->    4 (A1) B      2 (B1) A     
+  0.1928453514       1 (B2) A      1 (B1) B    ->    4 (A1) A      2 (B1) B     
+ -0.1928453514       1 (B2) A      1 (B1) B    ->    2 (B1) B      4 (A1) A     
+ -0.1928453514       1 (B1) B      1 (B2) A    ->    4 (A1) A      2 (B1) B     
+  0.1928453514       1 (B1) B      1 (B2) A    ->    2 (B1) B      4 (A1) A     
+  0.1928453514       1 (B2) B      1 (B1) A    ->    2 (B1) A      4 (A1) B     
+ -0.1928453514       1 (B2) B      1 (B1) A    ->    4 (A1) B      2 (B1) A     
+  0.1473006084       3 (A1) A      1 (B2) B    ->    4 (A1) A      4 (A1) B     
+ -0.1473006084       3 (A1) A      1 (B2) B    ->    4 (A1) B      4 (A1) A     
+ -0.1473006084       1 (B2) A      3 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.1473006084       1 (B2) A      3 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.1473006084       3 (A1) B      1 (B2) A    ->    4 (A1) A      4 (A1) B     
+ -0.1473006084       3 (A1) B      1 (B2) A    ->    4 (A1) B      4 (A1) A     
+ -0.1473006084       1 (B2) B      3 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.1473006084       1 (B2) B      3 (A1) A    ->    4 (A1) B      4 (A1) A     
+  0.1243475796       3 (A1) A      1 (B2) B    ->    2 (B1) A      2 (B1) B     
+ -0.1243475796       3 (A1) A      1 (B2) B    ->    2 (B1) B      2 (B1) A     
+ -0.1243475796       1 (B2) A      3 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.1243475796       1 (B2) A      3 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.1243475796       3 (A1) B      1 (B2) A    ->    2 (B1) A      2 (B1) B     
+ -0.1243475796       3 (A1) B      1 (B2) A    ->    2 (B1) B      2 (B1) A     
+ -0.1243475796       1 (B2) B      3 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.1243475796       1 (B2) B      3 (A1) A    ->    2 (B1) B      2 (B1) A     
+ -0.0779822979       1 (B1) A      1 (B2) B    ->    4 (A1) A      2 (B1) B     
+  0.0779822979       1 (B1) A      1 (B2) B    ->    2 (B1) B      4 (A1) A     
+  0.0779822979       1 (B2) A      1 (B1) B    ->    2 (B1) A      4 (A1) B     
+ -0.0779822979       1 (B2) A      1 (B1) B    ->    4 (A1) B      2 (B1) A     
+ -0.0779822979       1 (B1) B      1 (B2) A    ->    2 (B1) A      4 (A1) B     
+  0.0779822979       1 (B1) B      1 (B2) A    ->    4 (A1) B      2 (B1) A     
+  0.0779822979       1 (B2) B      1 (B1) A    ->    4 (A1) A      2 (B1) B     
+ -0.0779822979       1 (B2) B      1 (B1) A    ->    2 (B1) B      4 (A1) A     
+  0.0087294159       1 (B1) A      1 (B2) A    ->    4 (A1) A      2 (B1) A     
+ -0.0087294159       1 (B1) A      1 (B2) A    ->    2 (B1) A      4 (A1) A     
+ -0.0087294159       1 (B2) A      1 (B1) A    ->    4 (A1) A      2 (B1) A     
+  0.0087294159       1 (B2) A      1 (B1) A    ->    2 (B1) A      4 (A1) A     
+ -0.0087294159       1 (B1) B      1 (B2) B    ->    4 (A1) B      2 (B1) B     
+  0.0087294159       1 (B1) B      1 (B2) B    ->    2 (B1) B      4 (A1) B     
+  0.0087294159       1 (B2) B      1 (B1) B    ->    4 (A1) B      2 (B1) B     
+ -0.0087294159       1 (B2) B      1 (B1) B    ->    2 (B1) B      4 (A1) B     
+  0.0056177973       2 (A1) A      1 (B2) B    ->    2 (B1) A      2 (B1) B     
+ -0.0056177973       2 (A1) A      1 (B2) B    ->    2 (B1) B      2 (B1) A     
+ -0.0056177973       1 (B2) A      2 (A1) B    ->    2 (B1) A      2 (B1) B     
+  0.0056177973       1 (B2) A      2 (A1) B    ->    2 (B1) B      2 (B1) A     
+  0.0056177973       2 (A1) B      1 (B2) A    ->    2 (B1) A      2 (B1) B     
+ -0.0056177973       2 (A1) B      1 (B2) A    ->    2 (B1) B      2 (B1) A     
+ -0.0056177973       1 (B2) B      2 (A1) A    ->    2 (B1) A      2 (B1) B     
+  0.0056177973       1 (B2) B      2 (A1) A    ->    2 (B1) B      2 (B1) A     
+  0.0008990823       2 (A1) A      1 (B2) B    ->    4 (A1) A      4 (A1) B     
+ -0.0008990823       2 (A1) A      1 (B2) B    ->    4 (A1) B      4 (A1) A     
+ -0.0008990823       1 (B2) A      2 (A1) B    ->    4 (A1) A      4 (A1) B     
+  0.0008990823       1 (B2) A      2 (A1) B    ->    4 (A1) B      4 (A1) A     
+  0.0008990823       2 (A1) B      1 (B2) A    ->    4 (A1) A      4 (A1) B     
+ -0.0008990823       2 (A1) B      1 (B2) A    ->    4 (A1) B      4 (A1) A     
+ -0.0008990823       1 (B2) B      2 (A1) A    ->    4 (A1) A      4 (A1) B     
+  0.0008990823       1 (B2) B      2 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0003157392       1 (A1) A      1 (B2) B    ->    4 (A1) A      4 (A1) B     
+  0.0003157392       1 (A1) A      1 (B2) B    ->    4 (A1) B      4 (A1) A     
+  0.0003157392       1 (B2) A      1 (A1) B    ->    4 (A1) A      4 (A1) B     
+ -0.0003157392       1 (B2) A      1 (A1) B    ->    4 (A1) B      4 (A1) A     
+ -0.0003157392       1 (A1) B      1 (B2) A    ->    4 (A1) A      4 (A1) B     
+  0.0003157392       1 (A1) B      1 (B2) A    ->    4 (A1) B      4 (A1) A     
+  0.0003157392       1 (B2) B      1 (A1) A    ->    4 (A1) A      4 (A1) B     
+ -0.0003157392       1 (B2) B      1 (A1) A    ->    4 (A1) B      4 (A1) A     
+ -0.0000973971       1 (A1) A      1 (B2) B    ->    2 (B1) A      2 (B1) B     
+  0.0000973971       1 (A1) A      1 (B2) B    ->    2 (B1) B      2 (B1) A     
+  0.0000973971       1 (B2) A      1 (A1) B    ->    2 (B1) A      2 (B1) B     
+ -0.0000973971       1 (B2) A      1 (A1) B    ->    2 (B1) B      2 (B1) A     
+ -0.0000973971       1 (A1) B      1 (B2) A    ->    2 (B1) A      2 (B1) B     
+  0.0000973971       1 (A1) B      1 (B2) A    ->    2 (B1) B      2 (B1) A     
+  0.0000973971       1 (B2) B      1 (A1) A    ->    2 (B1) A      2 (B1) B     
+ -0.0000973971       1 (B2) B      1 (A1) A    ->    2 (B1) B      2 (B1) A     
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A1)    -20.3090
+               2       Occ  Alpha       2 (A1)     -1.1429
+               5       Occ  Alpha       3 (A1)     -0.3706
+               3       Occ  Alpha       1 (B1)     -0.4063
+               4       Occ  Alpha       1 (B2)     -0.3998
+               1       Occ  Beta        1 (A1)    -20.3090
+               2       Occ  Beta        2 (A1)     -1.1429
+               5       Occ  Beta        3 (A1)     -0.3706
+               3       Occ  Beta        1 (B1)     -0.4063
+               4       Occ  Beta        1 (B2)     -0.3998
+               6       Vir  Alpha       4 (A1)      0.2429
+               7       Vir  Alpha       2 (B1)      0.3072
+               6       Vir  Beta        4 (A1)      0.2429
+               7       Vir  Beta        2 (B1)      0.3072
+
+
+ EEs and amplitudes of EOMEE has be exported to fchk file
+Running a double precision version
+      EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      1         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      1     2.10e-03   2.5014   
+      1    0      2     1.56e-03   2.5017   
+      2    0      3     2.00e-04   2.5016   
+      3    1      4     5.25e-06   2.5016*  
+
+     Davidson procedure converged
+
+ Excited state properties for  EOMEE-CCSD transition 1/B2
+ Dipole moment (a.u.): 0.007823 (X 0.000000, Y 0.000000, Z -0.007823)
+ R-squared (a.u.): 28.100831 (XX 14.447073, YY 4.189881, ZZ 9.463878)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 5.000000, Tr(BB) 5.000000
+
+ EOMEE-CCSD calculation:   CPU 15.67 s  wall 5.04 s
+
+ Total ccman2 time:   CPU 20.69 s  wall 6.45 s
+
+
+ --------------------------------------------------------------
+             Orbital Energies (a.u.) and Symmetries
+ --------------------------------------------------------------
+
+ Alpha MOs, Restricted
+ -- Occupied --                  
+-20.309  -1.143  -0.406  -0.400  -0.371
+  1 A1    2 A1    1 B1    1 B2    3 A1                                         
+ -- Virtual --                   
+  0.243   0.307
+  4 A1    2 B1                                                                 
+
+ Beta MOs, Restricted
+ -- Occupied --                  
+-20.309  -1.143  -0.406  -0.400  -0.371
+  1 A1    2 A1    1 B1    1 B2    3 A1                                         
+ -- Virtual --                   
+  0.243   0.307
+  4 A1    2 B1                                                                 
+ --------------------------------------------------------------
+
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 O                    -0.037121
+      2 H                     0.018560
+      3 H                     0.018560
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                -0.0000
+    Dipole Moment (Debye)
+         X      -0.0000      Y      -0.0000      Z      -0.5895
+       Tot       0.5895
+    Quadrupole Moments (Debye-Ang)
+        XX      -4.8927     XY       0.0000     YY      -6.3943
+        XZ       0.0000     YZ      -0.0000     ZZ      -5.4761
+    Octopole Moments (Debye-Ang^2)
+       XXX      -0.0000    XXY       0.0000    XYY      -0.0000
+       YYY       0.0000    XXZ      -0.2802    XYZ       0.0000
+       YYZ       0.3524    XZZ      -0.0000    YZZ      -0.0000
+       ZZZ       1.0941
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX     -15.2471   XXXY       0.0000   XXYY      -3.4306
+      XYYY       0.0000   YYYY      -3.6128   XXXZ       0.0000
+      XXYZ      -0.0000   XYYZ       0.0000   YYYZ      -0.0000
+      XXZZ      -3.6640   XYZZ       0.0000   YYZZ      -2.1712
+      XZZZ       0.0000   YZZZ      -0.0000   ZZZZ      -8.9798
+ -----------------------------------------------------------------
+ Total job time:  7.80s(wall), 22.61s(cpu) 
+ Sun Sep  4 11:47:07 2022
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+

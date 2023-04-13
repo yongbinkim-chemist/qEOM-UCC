@@ -1,0 +1,98 @@
+Jobname.Temp
+SP        R                             6-31G               
+Number of atoms                            I                2
+Charge                                     I                0
+Multiplicity                               I                1
+Number of electrons                        I                2
+Number of alpha electrons                  I                1
+Number of beta electrons                   I                1
+Atomic numbers                             I   N=           2
+           1           1
+Current cartesian coordinates              R   N=           6
+  0.00000000E+00  0.00000000E+00 -1.79523982E+00  0.00000000E+00  0.00000000E+00
+  1.79523982E+00
+Nuclear charges                            R   N=           2
+  1.00000000E+00  1.00000000E+00
+Number of basis functions                  I                4
+Number of contracted shells                I                4
+Number of primitive shells                 I                8
+Highest angular momentum                   I                0
+Largest degree of contraction              I                3
+Shell types                                I   N=           4
+           0           0           0           0
+Number of primitives per shell             I   N=           4
+           3           1           3           1
+Shell to atom map                          I   N=           4
+           1           1           2           2
+Primitive exponents                        R   N=           8
+  1.87311370E+01  2.82539370E+00  6.40121700E-01  1.61277800E-01  1.87311370E+01
+  2.82539370E+00  6.40121700E-01  1.61277800E-01
+Contraction coefficients                   R   N=           8
+  3.34945995E-02  2.34726947E-01  8.13757318E-01  1.00000000E+00  3.34945995E-02
+  2.34726947E-01  8.13757318E-01  1.00000000E+00
+Coordinates of each shell                  R   N=          12
+  0.00000000E+00  0.00000000E+00 -1.79523982E+00  0.00000000E+00  0.00000000E+00
+ -1.79523982E+00  0.00000000E+00  0.00000000E+00  1.79523982E+00  0.00000000E+00
+  0.00000000E+00  1.79523982E+00
+Overlap Matrix                             R   N=          10
+  1.00000000E+00  6.58292049E-01  1.00000000E+00  1.10086172E-02  1.21338155E-01
+  1.00000000E+00  1.21338155E-01  3.53610261E-01  6.58292049E-01  1.00000000E+00
+Core Hamiltonian Matrix                    R   N=          10
+ -5.36066816E-01 -6.65919068E-01 -6.76354845E-01 -3.21339615E-02 -1.66498368E-01
+ -5.36066816E-01 -1.66498368E-01 -3.08857530E-01 -6.65919068E-01 -6.76354845E-01
+Orbital Coefficients CCMAN2 Alpha          R   N=          16
+ -2.23344630E-01 -4.61847021E-01 -2.23344630E-01 -4.61847021E-01 -2.30654470E-01
+ -6.62117149E-01  2.30654470E-01  6.62117149E-01 -9.16430225E-01  6.71738538E-01
+ -9.16430225E-01  6.71738538E-01  9.31504839E-01 -9.85192152E-01 -9.31504839E-01
+  9.85192152E-01
+Orbital Coefficients CCMAN2 Beta           R   N=          16
+ -2.30654470E-01 -6.62117149E-01  2.30654470E-01  6.62117149E-01 -9.16430225E-01
+  6.71738538E-01 -9.16430225E-01  6.71738538E-01  9.31504839E-01 -9.85192152E-01
+ -9.31504839E-01  9.85192152E-01 -2.23344630E-01 -4.61847021E-01 -2.23344630E-01
+ -4.61847021E-01
+EOMEE transition A Excitation Energies     R   N=           3
+  3.54578145E-01  4.01555366E-01  1.02053919E+00
+Number of Active Occ                       I                2
+Number of Active Vir                       I                6
+Alpha Amplitudes                           R   N=           6
+ -6.99773511E-01 -6.99773511E-01 -1.03871940E-01 -1.03871940E-01  5.63950419E-01
+  5.63950419E-01
+Alpha J Indexes                            I   N=           4
+           0           2           4           6
+Alpha I Indexes                            I   N=           6
+           0           9           1          10           2          11
+EOMEE transition A Excitation Energies     R   N=           3
+  3.65018717E-02  1.00099683E+00  1.01350031E+00
+Number of Active Occ                       I                2
+Number of Active Vir                       I                6
+Alpha Amplitudes                           R   N=           6
+  7.03296435E-01 -7.03296435E-01 -6.28267161E-01  6.28267161E-01  5.80197551E-01
+ -5.80197551E-01
+Alpha J Indexes                            I   N=           4
+           0           2           4           6
+Alpha I Indexes                            I   N=           6
+           0           9           1          10           2          11
+Number of independent functions            I                4
+Alpha MO coefficients                      R   N=          16
+ -2.23344630E-01 -4.61847021E-01 -2.23344630E-01 -4.61847021E-01 -2.30654470E-01
+ -6.62117149E-01  2.30654470E-01  6.62117149E-01 -9.16430225E-01  6.71738538E-01
+ -9.16430225E-01  6.71738538E-01  9.31504839E-01 -9.85192152E-01 -9.31504839E-01
+  9.85192152E-01
+Alpha Orbital Energies                     R   N=           4
+ -3.88778828E-01 -1.07768782E-02  1.01993116E+00  1.02191686E+00
+Total SCF Density                          R   N=          10
+  1.67304873E-01  2.57709600E-01  3.99058179E-01  6.36812483E-02  1.10416669E-01
+  1.67304873E-01  1.10416669E-01  1.89033073E-01  2.57709600E-01  3.99058179E-01
+Pure Switching                             I                1
+Dipole_Data                                R   N=           3
+  0.00000000E+00  0.00000000E+00 -3.38628633E-15
+Quadrupole_Data                            R   N=           6
+ -2.64355234E+00  0.00000000E+00 -2.64355234E+00  0.00000000E+00  0.00000000E+00
+ -1.91742343E+00
+Octapole_Data                              R   N=          10
+  0.00000000E+00  0.00000000E+00  0.00000000E+00  0.00000000E+00 -2.07431164E-15
+  0.00000000E+00 -2.07431164E-15  0.00000000E+00  0.00000000E+00 -9.95669588E-15
+Hexadecapole_Data                          R   N=          15
+ -2.85957121E+00  0.00000000E+00 -9.53190404E-01  0.00000000E+00 -2.85957121E+00
+  0.00000000E+00  0.00000000E+00  0.00000000E+00  0.00000000E+00 -3.06272683E+00
+  0.00000000E+00 -3.06272683E+00  0.00000000E+00  0.00000000E+00 -1.48145613E+01

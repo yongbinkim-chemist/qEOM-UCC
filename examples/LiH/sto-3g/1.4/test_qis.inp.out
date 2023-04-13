@@ -1,0 +1,1193 @@
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 5.4 (devel), Q-Chem, Inc., Pleasanton, CA (2021)
+
+ E. Epifanovsky,  A. T. B. Gilbert,  Xintian Feng,  Joonho Lee,  Yuezhi Mao,  
+ N. Mardirossian,  P. Pokhilko,  A. White,  M. Wormit,  M. P. Coons,  
+ A. L. Dempwolff,  Zhengting Gan,  D. Hait,  P. R. Horn,  L. D. Jacobson,  
+ I. Kaliman,  J. Kussmann,  A. W. Lange,  Ka Un Lao,  D. S. Levine,  Jie Liu,  
+ S. C. McKenzie,  A. F. Morrison,  K. Nanda,  F. Plasser,  D. R. Rehn,  
+ M. L. Vidal,  Zhi-Qiang You,  Ying Zhu,  B. Alam,  B. Albrecht,  
+ A. Aldossary,  E. Alguire,  J. H. Andersen,  D. Barton,  K. Begam,  A. Behn,  
+ Y. A. Bernard,  E. J. Berquist,  H. Burton,  A. Carreras,  K. Carter-Fenk,  
+ R. Chakraborty,  A. D. Chien,  K. D. Closser,  V. Cofer-Shabica,  
+ S. Dasgupta,  Jia Deng,  M. de Wergifosse,  M. Diedenhofen,  Hainam Do,  
+ S. Ehlert,  Po-Tung Fang,  S. Fatehi,  Qingguo Feng,  T. Friedhoff,  
+ J. Gayvert,  Qinghui Ge,  G. Gidofalvi,  M. Goldey,  J. Gomes,  
+ C. Gonzalez-Espinoza,  S. Gulania,  A. Gunina,  M. W. D. Hanson-Heine,  
+ P. H. P. Harbach,  A. W. Hauser,  M. F. Herbst,  M. Hernandez Vera,  
+ M. Hodecker,  Z. C. Holden,  S. Houck,  Xunkun Huang,  Kerwin Hui,  
+ B. C. Huynh,  M. Ivanov,  Hyunjun Ji,  Hanjie Jiang,  B. Kaduk,  S. Kaehler,  
+ K. Khistyaev,  Jaehoon Kim,  P. Klunzinger,  Z. Koczor-Benda,  
+ Joong Hoon Koh,  D. Kosenkov,  L. Koulias,  T. Kowalczyk,  C. M. Krauter,  
+ K. Kue,  A. Kunitsa,  T. Kus,  A. Landau,  K. V. Lawler,  D. Lefrancois,  
+ S. Lehtola,  Rain Li,  Yi-Pei Li,  Jiashu Liang,  M. Liebenthal,  
+ Hung-Hsuan Lin,  You-Sheng Lin,  Fenglai Liu,  Kuan-Yu Liu,  
+ M. Loipersberger,  A. Luenser,  A. Manjanath,  P. Manohar,  E. Mansoor,  
+ S. F. Manzer,  Shan-Ping Mao,  A. V. Marenich,  T. Markovich,  S. Mason,  
+ S. A. Maurer,  P. F. McLaughlin,  M. F. S. J. Menger,  J.-M. Mewes,  
+ S. A. Mewes,  P. Morgante,  J. W. Mullinax,  K. J. Oosterbaan,  G. Paran,  
+ Alexander C. Paul,  Suranjan K. Paul,  F. Pavosevic,  Zheng Pei,  S. Prager,  
+ E. I. Proynov,  E. Ramos,  B. Rana,  A. E. Rask,  A. Rettig,  R. M. Richard,  
+ F. Rob,  E. Rossomme,  T. Scheele,  M. Scheurer,  M. Schneider,  
+ N. Sergueev,  S. M. Sharada,  W. Skomorowski,  D. W. Small,  C. J. Stein,  
+ Yu-Chuan Su,  E. J. Sundstrom,  Zhen Tao,  J. Thirman,  T. Tsuchimochi,  
+ N. M. Tubman,  S. P. Veccham,  O. Vydrov,  J. Wenzel,  J. Witte,  A. Yamada,  
+ Kun Yao,  S. Yeganeh,  S. R. Yost,  A. Zech,  Igor Ying Zhang,  Xing Zhang,  
+ Yu Zhang,  D. Zuev,  A. Aspuru-Guzik,  A. T. Bell,  N. A. Besley,  
+ K. B. Bravaya,  B. R. Brooks,  D. Casanova,  Jeng-Da Chai,  S. Coriani,  
+ C. J. Cramer,  A. E. DePrince, III,  R. A. DiStasio Jr.,  A. Dreuw,  
+ B. D. Dunietz,  T. R. Furlani,  W. A. Goddard III,  S. Grimme,  
+ S. Hammes-Schiffer,  T. Head-Gordon,  W. J. Hehre,  Chao-Ping Hsu,  
+ T.-C. Jagau,  Yousung Jung,  A. Klamt,  Jing Kong,  D. S. Lambrecht,  
+ WanZhen Liang,  N. J. Mayhall,  C. W. McCurdy,  J. B. Neaton,  
+ C. Ochsenfeld,  J. A. Parkhill,  R. Peverati,  V. A. Rassolov,  Yihan Shao,  
+ L. V. Slipchenko,  T. Stauch,  R. P. Steele,  J. E. Subotnik,  
+ A. J. W. Thom,  A. Tkatchenko,  D. G. Truhlar,  T. Van Voorhis,  
+ T. A. Wesolowski,  K. B. Whaley,  H. L. Woodcock III,  P. M. Zimmerman,  
+ S. Faraji,  P. M. W. Gill,  M. Head-Gordon,  J. M. Herbert,  A. I. Krylov
+
+ Additional authors for Version 5.4.1: 
+ S. Kotaru,  Shaozhi Li,  Xiangyuan Li,  F. Matz,  A. Molle,  Haisheng Ren,  
+ Yingli Su,  Hung-Yi Tsai,  C. Utku,  Fang Wang
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  R. Baer,  J. Baker,  G. J. O. Beran,  
+ K. Brandhorst,  S. T. Brown,  E. F. C. Byrd,  A. K. Chakraborty,  
+ G. K. L. Chan,  Chun-Min Chang,  Yunqing Chen,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  R. G. Edgar,  J. Fosso-Tande,  
+ L. Fusti-Molnar,  D. Ghosh,  A. Ghysels,  A. Golubeva-Zadorozhnaya,  
+ J. Gonthier,  M. S. Gordon,  S. R. Gwaltney,  G. Hawkins,  J. E. Herr,  
+ A. Heyden,  S. Hirata,  E. G. Hohenstein,  G. Kedziora,  F. J. Keil,  
+ C. Kelley,  Jihan Kim,  R. A. King,  R. Z. Khaliullin,  P. P. Korambath,  
+ W. Kurlancheek,  A. Laurent,  A. M. Lee,  M. S. Lee,  S. V. Levchenko,  
+ Ching Yeh Lin,  D. Liotard,  E. Livshits,  R. C. Lochan,  I. Lotan,  
+ L. A. Martinez-Martinez,  P. E. Maslen,  N. Nair,  D. P. O'Neill,  
+ D. Neuhauser,  E. Neuscamman,  C. M. Oana,  R. Olivares-Amaya,  R. Olson,  
+ T. M. Perrine,  B. Peters,  P. A. Pieniazek,  A. Prociuk,  Y. M. Rhee,  
+ J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  H. F. Schaefer III,  
+ M. W. Schmidt,  N. E. Schultz,  S. Sharma,  N. Shenvi,  C. D. Sherrill,  
+ A. C. Simmonett,  A. Sodt,  T. Stein,  D. Stuck,  K. S. Thanthiriwatte,  
+ V. Vanovschi,  L. Vogt,  Tao Wang,  A. Warshel,  M. A. Watson,  
+ C. F. Williams,  Q. Wu,  X. Xu,  Jun Yang,  W. Zhang,  Yan Zhao
+
+ Please cite Q-Chem as follows:
+ Y. Shao et al., Mol. Phys. 113, 184-215 (2015)
+ DOI: 10.1080/00268976.2014.952696
+
+ Q-Chem 5.4.1 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 9.900.5 (Nocturnal Misbehaviour).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Thu Aug 11 11:27:40 2022  
+
+orc43
+ Host: 0
+
+     Scratch files written to /scratch/yongbin/qchem13618//
+ Processing $rem in /home/users/yongbin/software/yongbin_quantum/config/preferences:
+ Processing $rem in /home/users/yongbin/.qchemrc:
+
+ Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$comment
+Hydrogen molecule
+$end
+
+$molecule
+0 1
+  Li        0.0000000000    0.0000000000    0.0000000000
+  H         0.0000000000    0.0000000000    1.4000000000
+$end
+
+$rem
+   n_frozen_core = 0
+   print_qis = true
+   BASIS                = sto-3g
+   SYMMETRY             = false
+   CC_SYMMETRY          = false
+   METHOD               = eom-ccsd
+   EE_SINGLETS          = [3]  ! Compute two EOM-EE singlet excited states
+   EE_TRIPLETS          = [3]  ! Compute two EOM-EE triplet excited states
+   CC_REF_PROP          = true ! Compute ground state properties
+   CC_EOM_PROP          = true ! Compute excited state properties
+   CC_OSFNO             = true
+   GUI                  = 2
+$end                  
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      Li      0.0000000000     0.0000000000    -0.3500000000
+    2      H       0.0000000000     0.0000000000     1.0500000000
+ ----------------------------------------------------------------
+ Molecular Point Group                 C*v   NOp =***
+ Largest Abelian Subgroup              C2v   NOp =  1
+ Nuclear Repulsion Energy =           1.13395117 hartrees
+ There are        2 alpha and        2 beta electrons
+ Requested basis set is STO-3G
+ There are 3 shells and 6 basis functions
+ Total memory of 2000 MB is distributed as follows: 
+   MEM_STATIC is set to 192 MB
+   QALLOC/CCMAN JOB total memory use is  1808 MB
+ Warning: actual memory use might exceed 2000 MB
+
+ Total QAlloc Memory Limit   2000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+
+                       Distance Matrix (Angstroms)
+             Li(  1)
+   H (  2)  1.400000
+
+ A cutoff of  1.0D-14 yielded      6 shell pairs
+ There are        27 function pairs
+ Smallest overlap matrix eigenvalue = 2.95E-01
+
+ Scale SEOQF with 1.000000e+00/1.000000e+00/1.000000e+00
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =    -0.0000000016 hartrees
+ Guess from superposition of atomic densities
+ Warning:  Energy on first SCF cycle will be non-variational
+ SAD guess density has 4.000000 electrons
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Hartree-Fock
+ using 20 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A restricted SCF calculation will be
+ performed using DIIS
+ SCF converges when DIIS error is below 1.0e-08
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1      -7.5863722491      6.52e-02  
+    2      -7.8516571968      2.43e-02  
+    3      -7.8594371561      5.38e-03  
+    4      -7.8603433530      2.01e-03  
+    5      -7.8605384803      7.81e-05  
+    6      -7.8605386609      2.54e-06  
+    7      -7.8605386610      3.93e-07  
+    8      -7.8605386610      2.55e-09  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 1.15s  wall 1.00s 
+ SCF   energy in the final basis set =       -7.8605386610
+ Total energy in the final basis set =       -7.8605386610
+
+
+ ------------------------------------------------------------------------------
+
+   CCMAN2: suite of methods based on coupled cluster
+           and equation of motion theories.
+
+   Components:
+   * libvmm-1.3-trunk
+     by Evgeny Epifanovsky, Ilya Kaliman.
+   * libtensor-2.5-trunk
+     by Evgeny Epifanovsky, Michael Wormit, Dmitry Zuev, Sam Manzer, 
+        Ilya Kaliman.
+   * libcc-2.5-trunk
+     by Evgeny Epifanovsky, Arik Landau, Tomasz Kus, Kirill Khistyaev, 
+        Dmitry Zuev, Prashant Manohar, Xintian Feng, Anna Krylov, 
+        Matthew Goldey, Alec White, Thomas Jagau, Kaushik Nanda, 
+        Anastasia Gunina, Alexander Kunitsa, Joonho Lee.
+
+   CCMAN original authors:
+   Anna I. Krylov, C. David Sherrill, Steven R. Gwaltney,
+   Edward F. C. Byrd (2000)
+   Sergey V. Levchenko, Lyudmila V. Slipchenko, Tao Wang,
+   Ana-Maria C. Cristian (2003)
+   Piotr A. Pieniazek, C. Melania Oana, Evgeny Epifanovsky (2007)
+   Prashant Manohar (2009)
+
+ ------------------------------------------------------------------------------
+
+
+ Allocating and initializing 1808MB of RAM...
+ Calculation will run on 20 cores.
+
+
+ Occupation and symmetry of molecular orbitals
+
+ Point group: C1 (1 irreducible representation).
+
+                           A     All 
+ -------------------------------------
+ All molecular orbitals:
+  - Alpha                  6     6   
+  - Beta                   6     6   
+ -------------------------------------
+ Alpha orbitals:
+  - Frozen occupied        0     0   
+  - Active occupied        2     2   
+  - Active virtual         4     4   
+  - Frozen virtual         0     0   
+ -------------------------------------
+ Beta orbitals:
+  - Frozen occupied        0     0   
+  - Active occupied        2     2   
+  - Active virtual         4     4   
+  - Frozen virtual         0     0   
+ -------------------------------------
+
+ Import integrals:   CPU 0.00 s  wall 0.00 s
+
+ Import integrals:   CPU 0.09 s  wall 0.02 s
+
+ Run QIS:   CPU 0.01 s  wall 0.01 s
+
+ MP2 amplitudes:   CPU 0.00 s  wall 0.00 s
+
+Running a double precision version
+           CCSD T amplitudes will be solved using DIIS.
+
+           Start     Size      MaxIter   EConv     TConv     
+           3         7         100       1.00e-06  1.00e-04  
+ ------------------------------------------------------------------------------
+           Energy (a.u.)   Ediff      Tdiff       Comment
+ ------------------------------------------------------------------------------
+            -7.87221179                           
+     1      -7.87603022   3.82e-03   1.15e-01     
+     2      -7.87740542   1.38e-03   3.41e-02     
+     3      -7.87793630   5.31e-04   1.17e-02     
+     4      -7.87834995   4.14e-04   8.17e-03     Switched to DIIS steps.
+     5      -7.87843712   8.72e-05   4.72e-03     
+     6      -7.87844529   8.17e-06   6.39e-04     
+     7      -7.87844541   1.20e-07   6.02e-05     
+ ------------------------------------------------------------------------------
+            -7.87844541                           CCSD T converged.
+
+End of double precision
+ SCF energy                 = -7.86053866
+ MP2 energy                 = -7.87221179
+ CCSD correlation energy    = -0.01790675
+ CCSD total energy          = -7.87844541
+
+ CCSD  T1^2 = 0.0023  T2^2 = 0.0185  Leading amplitudes:
+
+ Amplitude    Orbitals with energies
+ -0.0340174131       2 (A) A                   ->    3 (A) A                    
+                    -0.3012                          0.0795                     
+ -0.0340174131       2 (A) B                   ->    3 (A) B                    
+                    -0.3012                          0.0795                     
+ -0.0023644025       2 (A) A                   ->    6 (A) A                    
+                    -0.3012                          0.5969                     
+ -0.0023644025       2 (A) B                   ->    6 (A) B                    
+                    -0.3012                          0.5969                     
+
+ Amplitude    Orbitals with energies
+ -0.1027688625       2 (A) A       2 (A) B     ->    6 (A) A       6 (A) B      
+                    -0.3012       -0.3012            0.5969        0.5969       
+  0.1027688625       2 (A) A       2 (A) B     ->    6 (A) B       6 (A) A      
+                    -0.3012       -0.3012            0.5969        0.5969       
+  0.1027688625       2 (A) B       2 (A) A     ->    6 (A) A       6 (A) B      
+                    -0.3012       -0.3012            0.5969        0.5969       
+ -0.1027688625       2 (A) B       2 (A) A     ->    6 (A) B       6 (A) A      
+                    -0.3012       -0.3012            0.5969        0.5969       
+
+ Computing CCSD intermediates for later calculations in double precision
+ Finished.
+
+Running a double precision version
+           CCSD Lambda amplitudes will be solved using DIIS.
+           Start     Size      MaxIter   EConv     LConv     
+           3         7         100       1.00e-06  1.00e-04  
+ ------------------------------------------------------------------------------
+            Enorm      Ldiff       Comment
+ ------------------------------------------------------------------------------
+     1     4.68e-03   3.73e-03     
+     2     1.33e-03   1.22e-03     
+     3     6.20e-04   5.22e-04     
+     4     2.64e-04   4.01e-04     Switched to DIIS steps.
+     5     6.45e-05   2.10e-04     
+     6     1.11e-05   4.92e-05     
+     7     1.12e-06   1.08e-06     
+     8     1.42e-07   2.87e-07     
+ ------------------------------------------------------------------------------
+                                   CCSD Lambda converged.
+
+ Computing density matrices in double precision...
+ Computing density matrices... Done.
+ Reference state properties
+ Dipole moment (a.u.): 1.828069 (X 0.000000, Y 0.000000, Z -1.828069)
+ R-squared (a.u.): 17.117033 (XX 3.993248, YY 3.993248, ZZ 9.130537)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 2.000000, Tr(BB) 2.000000
+ Density matrix was written to a file for further analysis.
+
+ CCSD calculation:   CPU 0.51 s  wall 0.34 s
+
+        Solving for EOMEE-CCSD A singlet states.
+
+Running a double precision version
+        EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using standard  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      3         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      3     3.29e-02   5.2881   6.8887   6.8887   
+      1    0      6     1.99e-02   4.1237   5.5107   5.5107   
+      2    0      9     7.23e-04   3.8815   5.3351   5.3351   
+      3    0      12    6.02e-05   3.8732   5.3348   5.3348   
+      4    3      15    1.02e-06   3.8715*  5.3358*  5.3358*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/A
+ Total energy = -7.73617162 a.u.  Excitation energy = 3.87146662 eV.
+ R0^2 = 0.0040  R1^2 = 0.9010  R2^2 = 0.0990  Res^2 = 2.54e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.6707315893       2 (A) A                   ->    3 (A) A                    
+ -0.6707315893       2 (A) B                   ->    3 (A) B                    
+ -0.0245323553       2 (A) A                   ->    6 (A) A                    
+ -0.0245323553       2 (A) B                   ->    6 (A) B                    
+ -0.0042551980       1 (A) A                   ->    3 (A) A                    
+ -0.0042551980       1 (A) B                   ->    3 (A) B                    
+ -0.0018088547       1 (A) A                   ->    6 (A) A                    
+ -0.0018088547       1 (A) B                   ->    6 (A) B                    
+ -0.2172135073       2 (A) A       2 (A) B     ->    3 (A) A       3 (A) B      
+  0.2172135073       2 (A) A       2 (A) B     ->    3 (A) B       3 (A) A      
+  0.2172135073       2 (A) B       2 (A) A     ->    3 (A) A       3 (A) B      
+ -0.2172135073       2 (A) B       2 (A) A     ->    3 (A) B       3 (A) A      
+  0.1566698120       2 (A) A       2 (A) B     ->    3 (A) A       6 (A) B      
+  0.1566698120       2 (A) A       2 (A) B     ->    6 (A) A       3 (A) B      
+ -0.1566698120       2 (A) A       2 (A) B     ->    6 (A) B       3 (A) A      
+ -0.1566698120       2 (A) A       2 (A) B     ->    3 (A) B       6 (A) A      
+ -0.1566698120       2 (A) B       2 (A) A     ->    3 (A) A       6 (A) B      
+ -0.1566698120       2 (A) B       2 (A) A     ->    6 (A) A       3 (A) B      
+  0.1566698120       2 (A) B       2 (A) A     ->    3 (A) B       6 (A) A      
+  0.1566698120       2 (A) B       2 (A) A     ->    6 (A) B       3 (A) A      
+  0.0368583068       2 (A) A       2 (A) B     ->    6 (A) A       6 (A) B      
+ -0.0368583068       2 (A) A       2 (A) B     ->    6 (A) B       6 (A) A      
+ -0.0368583068       2 (A) B       2 (A) A     ->    6 (A) A       6 (A) B      
+  0.0368583068       2 (A) B       2 (A) A     ->    6 (A) B       6 (A) A      
+ -0.0245112885       2 (A) A       2 (A) B     ->    5 (A) A       5 (A) B      
+  0.0245112885       2 (A) A       2 (A) B     ->    5 (A) B       5 (A) A      
+  0.0245112885       2 (A) B       2 (A) A     ->    5 (A) A       5 (A) B      
+ -0.0245112885       2 (A) B       2 (A) A     ->    5 (A) B       5 (A) A      
+ -0.0245112885       2 (A) A       2 (A) B     ->    4 (A) A       4 (A) B      
+  0.0245112885       2 (A) A       2 (A) B     ->    4 (A) B       4 (A) A      
+  0.0245112885       2 (A) B       2 (A) A     ->    4 (A) A       4 (A) B      
+ -0.0245112885       2 (A) B       2 (A) A     ->    4 (A) B       4 (A) A      
+  0.0050093187       1 (A) A       2 (A) B     ->    3 (A) A       3 (A) B      
+  0.0050093187       2 (A) A       1 (A) B     ->    3 (A) A       3 (A) B      
+ -0.0050093187       1 (A) A       2 (A) B     ->    3 (A) B       3 (A) A      
+ -0.0050093187       2 (A) A       1 (A) B     ->    3 (A) B       3 (A) A      
+ -0.0050093187       2 (A) B       1 (A) A     ->    3 (A) A       3 (A) B      
+ -0.0050093187       1 (A) B       2 (A) A     ->    3 (A) A       3 (A) B      
+  0.0050093187       1 (A) B       2 (A) A     ->    3 (A) B       3 (A) A      
+  0.0050093187       2 (A) B       1 (A) A     ->    3 (A) B       3 (A) A      
+  0.0040126470       1 (A) A       2 (A) B     ->    6 (A) A       3 (A) B      
+  0.0040126470       2 (A) A       1 (A) B     ->    3 (A) A       6 (A) B      
+ -0.0040126470       1 (A) A       2 (A) B     ->    3 (A) B       6 (A) A      
+ -0.0040126470       2 (A) A       1 (A) B     ->    6 (A) B       3 (A) A      
+ -0.0040126470       2 (A) B       1 (A) A     ->    6 (A) A       3 (A) B      
+ -0.0040126470       1 (A) B       2 (A) A     ->    3 (A) A       6 (A) B      
+  0.0040126470       1 (A) B       2 (A) A     ->    6 (A) B       3 (A) A      
+  0.0040126470       2 (A) B       1 (A) A     ->    3 (A) B       6 (A) A      
+  0.0038231108       1 (A) A       1 (A) B     ->    3 (A) A       3 (A) B      
+ -0.0038231108       1 (A) A       1 (A) B     ->    3 (A) B       3 (A) A      
+ -0.0038231108       1 (A) B       1 (A) A     ->    3 (A) A       3 (A) B      
+  0.0038231108       1 (A) B       1 (A) A     ->    3 (A) B       3 (A) A      
+ -0.0038113099       1 (A) A       2 (A) A     ->    3 (A) A       6 (A) A      
+  0.0038113099       1 (A) A       2 (A) A     ->    6 (A) A       3 (A) A      
+  0.0038113099       2 (A) A       1 (A) A     ->    3 (A) A       6 (A) A      
+ -0.0038113099       2 (A) A       1 (A) A     ->    6 (A) A       3 (A) A      
+ -0.0038113099       1 (A) B       2 (A) B     ->    3 (A) B       6 (A) B      
+  0.0038113099       1 (A) B       2 (A) B     ->    6 (A) B       3 (A) B      
+  0.0038113099       2 (A) B       1 (A) B     ->    3 (A) B       6 (A) B      
+ -0.0038113099       2 (A) B       1 (A) B     ->    6 (A) B       3 (A) B      
+  0.0025668802       1 (A) A       2 (A) B     ->    5 (A) A       5 (A) B      
+  0.0025668802       2 (A) A       1 (A) B     ->    5 (A) A       5 (A) B      
+ -0.0025668802       1 (A) A       2 (A) B     ->    5 (A) B       5 (A) A      
+ -0.0025668802       2 (A) A       1 (A) B     ->    5 (A) B       5 (A) A      
+ -0.0025668802       2 (A) B       1 (A) A     ->    5 (A) A       5 (A) B      
+ -0.0025668802       1 (A) B       2 (A) A     ->    5 (A) A       5 (A) B      
+  0.0025668802       1 (A) B       2 (A) A     ->    5 (A) B       5 (A) A      
+  0.0025668802       2 (A) B       1 (A) A     ->    5 (A) B       5 (A) A      
+  0.0025668802       1 (A) A       2 (A) B     ->    4 (A) A       4 (A) B      
+  0.0025668802       2 (A) A       1 (A) B     ->    4 (A) A       4 (A) B      
+ -0.0025668802       1 (A) A       2 (A) B     ->    4 (A) B       4 (A) A      
+ -0.0025668802       2 (A) A       1 (A) B     ->    4 (A) B       4 (A) A      
+ -0.0025668802       2 (A) B       1 (A) A     ->    4 (A) A       4 (A) B      
+ -0.0025668802       1 (A) B       2 (A) A     ->    4 (A) A       4 (A) B      
+  0.0025668802       1 (A) B       2 (A) A     ->    4 (A) B       4 (A) A      
+  0.0025668802       2 (A) B       1 (A) A     ->    4 (A) B       4 (A) A      
+  0.0012983249       1 (A) A       2 (A) B     ->    6 (A) A       6 (A) B      
+  0.0012983249       2 (A) A       1 (A) B     ->    6 (A) A       6 (A) B      
+ -0.0012983249       1 (A) A       2 (A) B     ->    6 (A) B       6 (A) A      
+ -0.0012983249       2 (A) A       1 (A) B     ->    6 (A) B       6 (A) A      
+ -0.0012983249       2 (A) B       1 (A) A     ->    6 (A) A       6 (A) B      
+ -0.0012983249       1 (A) B       2 (A) A     ->    6 (A) A       6 (A) B      
+  0.0012983249       1 (A) B       2 (A) A     ->    6 (A) B       6 (A) A      
+  0.0012983249       2 (A) B       1 (A) A     ->    6 (A) B       6 (A) A      
+ -0.0012459542       1 (A) A       1 (A) B     ->    3 (A) A       6 (A) B      
+ -0.0012459542       1 (A) A       1 (A) B     ->    6 (A) A       3 (A) B      
+  0.0012459542       1 (A) A       1 (A) B     ->    6 (A) B       3 (A) A      
+  0.0012459542       1 (A) A       1 (A) B     ->    3 (A) B       6 (A) A      
+  0.0012459542       1 (A) B       1 (A) A     ->    3 (A) A       6 (A) B      
+  0.0012459542       1 (A) B       1 (A) A     ->    6 (A) A       3 (A) B      
+ -0.0012459542       1 (A) B       1 (A) A     ->    3 (A) B       6 (A) A      
+ -0.0012459542       1 (A) B       1 (A) A     ->    6 (A) B       3 (A) A      
+ -0.0003694326       1 (A) A       1 (A) B     ->    6 (A) A       6 (A) B      
+  0.0003694326       1 (A) A       1 (A) B     ->    6 (A) B       6 (A) A      
+  0.0003694326       1 (A) B       1 (A) A     ->    6 (A) A       6 (A) B      
+ -0.0003694326       1 (A) B       1 (A) A     ->    6 (A) B       6 (A) A      
+  0.0002136219       1 (A) A       2 (A) B     ->    3 (A) A       6 (A) B      
+  0.0002136219       2 (A) A       1 (A) B     ->    6 (A) A       3 (A) B      
+ -0.0002136219       1 (A) A       2 (A) B     ->    6 (A) B       3 (A) A      
+ -0.0002136219       2 (A) A       1 (A) B     ->    3 (A) B       6 (A) A      
+ -0.0002136219       2 (A) B       1 (A) A     ->    3 (A) A       6 (A) B      
+ -0.0002136219       1 (A) B       2 (A) A     ->    6 (A) A       3 (A) B      
+  0.0002136219       1 (A) B       2 (A) A     ->    3 (A) B       6 (A) A      
+  0.0002136219       2 (A) B       1 (A) A     ->    6 (A) B       3 (A) A      
+ -0.0000840884       1 (A) A       1 (A) B     ->    4 (A) A       4 (A) B      
+  0.0000840884       1 (A) A       1 (A) B     ->    4 (A) B       4 (A) A      
+  0.0000840884       1 (A) B       1 (A) A     ->    4 (A) A       4 (A) B      
+ -0.0000840884       1 (A) B       1 (A) A     ->    4 (A) B       4 (A) A      
+ -0.0000840884       1 (A) A       1 (A) B     ->    5 (A) A       5 (A) B      
+  0.0000840884       1 (A) A       1 (A) B     ->    5 (A) B       5 (A) A      
+  0.0000840884       1 (A) B       1 (A) A     ->    5 (A) A       5 (A) B      
+ -0.0000840884       1 (A) B       1 (A) A     ->    5 (A) B       5 (A) A      
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A)     -2.3460
+               2       Occ  Alpha       2 (A)     -0.3012
+               1       Occ  Beta        1 (A)     -2.3460
+               2       Occ  Beta        2 (A)     -0.3012
+               3       Vir  Alpha       3 (A)      0.0795
+               4       Vir  Alpha       4 (A)      0.1633
+               5       Vir  Alpha       5 (A)      0.1633
+               6       Vir  Alpha       6 (A)      0.5969
+               3       Vir  Beta        3 (A)      0.0795
+               4       Vir  Beta        4 (A)      0.1633
+               5       Vir  Beta        5 (A)      0.1633
+               6       Vir  Beta        6 (A)      0.5969
+
+
+ EOMEE transition 2/A
+ Total energy = -7.68235682 a.u.  Excitation energy = 5.33584189 eV.
+ R0^2 = 0.0000  R1^2 = 0.9015  R2^2 = 0.0985  Res^2 = 2.63e-07
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.6713556862       2 (A) A                   ->    5 (A) A                    
+  0.6713556862       2 (A) B                   ->    5 (A) B                    
+  0.0065492050       1 (A) A                   ->    5 (A) A                    
+  0.0065492050       1 (A) B                   ->    5 (A) B                    
+ -0.1779277779       2 (A) A       2 (A) B     ->    5 (A) A       6 (A) B      
+ -0.1779277779       2 (A) A       2 (A) B     ->    6 (A) A       5 (A) B      
+  0.1779277779       2 (A) A       2 (A) B     ->    6 (A) B       5 (A) A      
+  0.1779277779       2 (A) A       2 (A) B     ->    5 (A) B       6 (A) A      
+  0.1779277779       2 (A) B       2 (A) A     ->    5 (A) A       6 (A) B      
+  0.1779277779       2 (A) B       2 (A) A     ->    6 (A) A       5 (A) B      
+ -0.1779277779       2 (A) B       2 (A) A     ->    5 (A) B       6 (A) A      
+ -0.1779277779       2 (A) B       2 (A) A     ->    6 (A) B       5 (A) A      
+  0.1324340598       2 (A) A       2 (A) B     ->    3 (A) A       5 (A) B      
+  0.1324340598       2 (A) A       2 (A) B     ->    5 (A) A       3 (A) B      
+ -0.1324340598       2 (A) A       2 (A) B     ->    5 (A) B       3 (A) A      
+ -0.1324340598       2 (A) A       2 (A) B     ->    3 (A) B       5 (A) A      
+ -0.1324340598       2 (A) B       2 (A) A     ->    3 (A) A       5 (A) B      
+ -0.1324340598       2 (A) B       2 (A) A     ->    5 (A) A       3 (A) B      
+  0.1324340598       2 (A) B       2 (A) A     ->    3 (A) B       5 (A) A      
+  0.1324340598       2 (A) B       2 (A) A     ->    5 (A) B       3 (A) A      
+  0.0036135101       1 (A) A       2 (A) A     ->    5 (A) A       6 (A) A      
+ -0.0036135101       1 (A) A       2 (A) A     ->    6 (A) A       5 (A) A      
+ -0.0036135101       2 (A) A       1 (A) A     ->    5 (A) A       6 (A) A      
+  0.0036135101       2 (A) A       1 (A) A     ->    6 (A) A       5 (A) A      
+  0.0036135101       1 (A) B       2 (A) B     ->    5 (A) B       6 (A) B      
+ -0.0036135101       1 (A) B       2 (A) B     ->    6 (A) B       5 (A) B      
+ -0.0036135101       2 (A) B       1 (A) B     ->    5 (A) B       6 (A) B      
+  0.0036135101       2 (A) B       1 (A) B     ->    6 (A) B       5 (A) B      
+ -0.0028599613       1 (A) A       2 (A) B     ->    3 (A) A       5 (A) B      
+ -0.0028599613       2 (A) A       1 (A) B     ->    5 (A) A       3 (A) B      
+  0.0028599613       1 (A) A       2 (A) B     ->    5 (A) B       3 (A) A      
+  0.0028599613       2 (A) A       1 (A) B     ->    3 (A) B       5 (A) A      
+  0.0028599613       2 (A) B       1 (A) A     ->    3 (A) A       5 (A) B      
+  0.0028599613       1 (A) B       2 (A) A     ->    5 (A) A       3 (A) B      
+ -0.0028599613       1 (A) B       2 (A) A     ->    3 (A) B       5 (A) A      
+ -0.0028599613       2 (A) B       1 (A) A     ->    5 (A) B       3 (A) A      
+ -0.0027680786       1 (A) A       2 (A) B     ->    5 (A) A       3 (A) B      
+ -0.0027680786       2 (A) A       1 (A) B     ->    3 (A) A       5 (A) B      
+  0.0027680786       1 (A) A       2 (A) B     ->    3 (A) B       5 (A) A      
+  0.0027680786       2 (A) A       1 (A) B     ->    5 (A) B       3 (A) A      
+  0.0027680786       2 (A) B       1 (A) A     ->    5 (A) A       3 (A) B      
+  0.0027680786       1 (A) B       2 (A) A     ->    3 (A) A       5 (A) B      
+ -0.0027680786       1 (A) B       2 (A) A     ->    5 (A) B       3 (A) A      
+ -0.0027680786       2 (A) B       1 (A) A     ->    3 (A) B       5 (A) A      
+  0.0022802108       1 (A) A       2 (A) B     ->    5 (A) A       6 (A) B      
+  0.0022802108       2 (A) A       1 (A) B     ->    6 (A) A       5 (A) B      
+ -0.0022802108       1 (A) A       2 (A) B     ->    6 (A) B       5 (A) A      
+ -0.0022802108       2 (A) A       1 (A) B     ->    5 (A) B       6 (A) A      
+ -0.0022802108       2 (A) B       1 (A) A     ->    5 (A) A       6 (A) B      
+ -0.0022802108       1 (A) B       2 (A) A     ->    6 (A) A       5 (A) B      
+  0.0022802108       1 (A) B       2 (A) A     ->    5 (A) B       6 (A) A      
+  0.0022802108       2 (A) B       1 (A) A     ->    6 (A) B       5 (A) A      
+ -0.0019948491       1 (A) A       1 (A) B     ->    3 (A) A       5 (A) B      
+ -0.0019948491       1 (A) A       1 (A) B     ->    5 (A) A       3 (A) B      
+  0.0019948491       1 (A) A       1 (A) B     ->    5 (A) B       3 (A) A      
+  0.0019948491       1 (A) A       1 (A) B     ->    3 (A) B       5 (A) A      
+  0.0019948491       1 (A) B       1 (A) A     ->    3 (A) A       5 (A) B      
+  0.0019948491       1 (A) B       1 (A) A     ->    5 (A) A       3 (A) B      
+ -0.0019948491       1 (A) B       1 (A) A     ->    3 (A) B       5 (A) A      
+ -0.0019948491       1 (A) B       1 (A) A     ->    5 (A) B       3 (A) A      
+ -0.0013269489       1 (A) A       2 (A) B     ->    6 (A) A       5 (A) B      
+ -0.0013269489       2 (A) A       1 (A) B     ->    5 (A) A       6 (A) B      
+  0.0013269489       1 (A) A       2 (A) B     ->    5 (A) B       6 (A) A      
+  0.0013269489       2 (A) A       1 (A) B     ->    6 (A) B       5 (A) A      
+  0.0013269489       2 (A) B       1 (A) A     ->    6 (A) A       5 (A) B      
+  0.0013269489       1 (A) B       2 (A) A     ->    5 (A) A       6 (A) B      
+ -0.0013269489       1 (A) B       2 (A) A     ->    6 (A) B       5 (A) A      
+ -0.0013269489       2 (A) B       1 (A) A     ->    5 (A) B       6 (A) A      
+  0.0013148983       1 (A) A       1 (A) B     ->    5 (A) A       6 (A) B      
+  0.0013148983       1 (A) A       1 (A) B     ->    6 (A) A       5 (A) B      
+ -0.0013148983       1 (A) A       1 (A) B     ->    6 (A) B       5 (A) A      
+ -0.0013148983       1 (A) A       1 (A) B     ->    5 (A) B       6 (A) A      
+ -0.0013148983       1 (A) B       1 (A) A     ->    5 (A) A       6 (A) B      
+ -0.0013148983       1 (A) B       1 (A) A     ->    6 (A) A       5 (A) B      
+  0.0013148983       1 (A) B       1 (A) A     ->    5 (A) B       6 (A) A      
+  0.0013148983       1 (A) B       1 (A) A     ->    6 (A) B       5 (A) A      
+ -0.0000926923       1 (A) A       2 (A) A     ->    3 (A) A       5 (A) A      
+  0.0000926923       1 (A) A       2 (A) A     ->    5 (A) A       3 (A) A      
+  0.0000926923       2 (A) A       1 (A) A     ->    3 (A) A       5 (A) A      
+ -0.0000926923       2 (A) A       1 (A) A     ->    5 (A) A       3 (A) A      
+ -0.0000926923       1 (A) B       2 (A) B     ->    3 (A) B       5 (A) B      
+  0.0000926923       1 (A) B       2 (A) B     ->    5 (A) B       3 (A) B      
+  0.0000926923       2 (A) B       1 (A) B     ->    3 (A) B       5 (A) B      
+ -0.0000926923       2 (A) B       1 (A) B     ->    5 (A) B       3 (A) B      
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A)     -2.3460
+               2       Occ  Alpha       2 (A)     -0.3012
+               1       Occ  Beta        1 (A)     -2.3460
+               2       Occ  Beta        2 (A)     -0.3012
+               3       Vir  Alpha       3 (A)      0.0795
+               5       Vir  Alpha       5 (A)      0.1633
+               6       Vir  Alpha       6 (A)      0.5969
+               3       Vir  Beta        3 (A)      0.0795
+               5       Vir  Beta        5 (A)      0.1633
+               6       Vir  Beta        6 (A)      0.5969
+
+
+ EOMEE transition 3/A
+ Total energy = -7.68235682 a.u.  Excitation energy = 5.33584191 eV.
+ R0^2 = 0.0000  R1^2 = 0.9015  R2^2 = 0.0985  Res^2 = 2.63e-07
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.6713556862       2 (A) A                   ->    4 (A) A                    
+  0.6713556862       2 (A) B                   ->    4 (A) B                    
+  0.0065492050       1 (A) A                   ->    4 (A) A                    
+  0.0065492050       1 (A) B                   ->    4 (A) B                    
+ -0.1779277779       2 (A) A       2 (A) B     ->    4 (A) A       6 (A) B      
+ -0.1779277779       2 (A) A       2 (A) B     ->    6 (A) A       4 (A) B      
+  0.1779277779       2 (A) A       2 (A) B     ->    6 (A) B       4 (A) A      
+  0.1779277779       2 (A) A       2 (A) B     ->    4 (A) B       6 (A) A      
+  0.1779277779       2 (A) B       2 (A) A     ->    4 (A) A       6 (A) B      
+  0.1779277779       2 (A) B       2 (A) A     ->    6 (A) A       4 (A) B      
+ -0.1779277779       2 (A) B       2 (A) A     ->    4 (A) B       6 (A) A      
+ -0.1779277779       2 (A) B       2 (A) A     ->    6 (A) B       4 (A) A      
+  0.1324340598       2 (A) A       2 (A) B     ->    3 (A) A       4 (A) B      
+  0.1324340598       2 (A) A       2 (A) B     ->    4 (A) A       3 (A) B      
+ -0.1324340598       2 (A) A       2 (A) B     ->    4 (A) B       3 (A) A      
+ -0.1324340598       2 (A) A       2 (A) B     ->    3 (A) B       4 (A) A      
+ -0.1324340598       2 (A) B       2 (A) A     ->    3 (A) A       4 (A) B      
+ -0.1324340598       2 (A) B       2 (A) A     ->    4 (A) A       3 (A) B      
+  0.1324340598       2 (A) B       2 (A) A     ->    3 (A) B       4 (A) A      
+  0.1324340598       2 (A) B       2 (A) A     ->    4 (A) B       3 (A) A      
+  0.0036135101       1 (A) A       2 (A) A     ->    4 (A) A       6 (A) A      
+ -0.0036135101       1 (A) A       2 (A) A     ->    6 (A) A       4 (A) A      
+ -0.0036135101       2 (A) A       1 (A) A     ->    4 (A) A       6 (A) A      
+  0.0036135101       2 (A) A       1 (A) A     ->    6 (A) A       4 (A) A      
+  0.0036135101       1 (A) B       2 (A) B     ->    4 (A) B       6 (A) B      
+ -0.0036135101       1 (A) B       2 (A) B     ->    6 (A) B       4 (A) B      
+ -0.0036135101       2 (A) B       1 (A) B     ->    4 (A) B       6 (A) B      
+  0.0036135101       2 (A) B       1 (A) B     ->    6 (A) B       4 (A) B      
+ -0.0028599613       1 (A) A       2 (A) B     ->    3 (A) A       4 (A) B      
+ -0.0028599613       2 (A) A       1 (A) B     ->    4 (A) A       3 (A) B      
+  0.0028599613       1 (A) A       2 (A) B     ->    4 (A) B       3 (A) A      
+  0.0028599613       2 (A) A       1 (A) B     ->    3 (A) B       4 (A) A      
+  0.0028599613       2 (A) B       1 (A) A     ->    3 (A) A       4 (A) B      
+  0.0028599613       1 (A) B       2 (A) A     ->    4 (A) A       3 (A) B      
+ -0.0028599613       1 (A) B       2 (A) A     ->    3 (A) B       4 (A) A      
+ -0.0028599613       2 (A) B       1 (A) A     ->    4 (A) B       3 (A) A      
+ -0.0027680786       1 (A) A       2 (A) B     ->    4 (A) A       3 (A) B      
+ -0.0027680786       2 (A) A       1 (A) B     ->    3 (A) A       4 (A) B      
+  0.0027680786       1 (A) A       2 (A) B     ->    3 (A) B       4 (A) A      
+  0.0027680786       2 (A) A       1 (A) B     ->    4 (A) B       3 (A) A      
+  0.0027680786       2 (A) B       1 (A) A     ->    4 (A) A       3 (A) B      
+  0.0027680786       1 (A) B       2 (A) A     ->    3 (A) A       4 (A) B      
+ -0.0027680786       1 (A) B       2 (A) A     ->    4 (A) B       3 (A) A      
+ -0.0027680786       2 (A) B       1 (A) A     ->    3 (A) B       4 (A) A      
+  0.0022802108       1 (A) A       2 (A) B     ->    4 (A) A       6 (A) B      
+  0.0022802108       2 (A) A       1 (A) B     ->    6 (A) A       4 (A) B      
+ -0.0022802108       1 (A) A       2 (A) B     ->    6 (A) B       4 (A) A      
+ -0.0022802108       2 (A) A       1 (A) B     ->    4 (A) B       6 (A) A      
+ -0.0022802108       2 (A) B       1 (A) A     ->    4 (A) A       6 (A) B      
+ -0.0022802108       1 (A) B       2 (A) A     ->    6 (A) A       4 (A) B      
+  0.0022802108       1 (A) B       2 (A) A     ->    4 (A) B       6 (A) A      
+  0.0022802108       2 (A) B       1 (A) A     ->    6 (A) B       4 (A) A      
+ -0.0019948491       1 (A) A       1 (A) B     ->    3 (A) A       4 (A) B      
+ -0.0019948491       1 (A) A       1 (A) B     ->    4 (A) A       3 (A) B      
+  0.0019948491       1 (A) A       1 (A) B     ->    4 (A) B       3 (A) A      
+  0.0019948491       1 (A) A       1 (A) B     ->    3 (A) B       4 (A) A      
+  0.0019948491       1 (A) B       1 (A) A     ->    3 (A) A       4 (A) B      
+  0.0019948491       1 (A) B       1 (A) A     ->    4 (A) A       3 (A) B      
+ -0.0019948491       1 (A) B       1 (A) A     ->    3 (A) B       4 (A) A      
+ -0.0019948491       1 (A) B       1 (A) A     ->    4 (A) B       3 (A) A      
+ -0.0013269489       1 (A) A       2 (A) B     ->    6 (A) A       4 (A) B      
+ -0.0013269489       2 (A) A       1 (A) B     ->    4 (A) A       6 (A) B      
+  0.0013269489       1 (A) A       2 (A) B     ->    4 (A) B       6 (A) A      
+  0.0013269489       2 (A) A       1 (A) B     ->    6 (A) B       4 (A) A      
+  0.0013269489       2 (A) B       1 (A) A     ->    6 (A) A       4 (A) B      
+  0.0013269489       1 (A) B       2 (A) A     ->    4 (A) A       6 (A) B      
+ -0.0013269489       1 (A) B       2 (A) A     ->    6 (A) B       4 (A) A      
+ -0.0013269489       2 (A) B       1 (A) A     ->    4 (A) B       6 (A) A      
+  0.0013148983       1 (A) A       1 (A) B     ->    4 (A) A       6 (A) B      
+  0.0013148983       1 (A) A       1 (A) B     ->    6 (A) A       4 (A) B      
+ -0.0013148983       1 (A) A       1 (A) B     ->    6 (A) B       4 (A) A      
+ -0.0013148983       1 (A) A       1 (A) B     ->    4 (A) B       6 (A) A      
+ -0.0013148983       1 (A) B       1 (A) A     ->    4 (A) A       6 (A) B      
+ -0.0013148983       1 (A) B       1 (A) A     ->    6 (A) A       4 (A) B      
+  0.0013148983       1 (A) B       1 (A) A     ->    4 (A) B       6 (A) A      
+  0.0013148983       1 (A) B       1 (A) A     ->    6 (A) B       4 (A) A      
+ -0.0000926923       1 (A) A       2 (A) A     ->    3 (A) A       4 (A) A      
+  0.0000926923       1 (A) A       2 (A) A     ->    4 (A) A       3 (A) A      
+  0.0000926923       2 (A) A       1 (A) A     ->    3 (A) A       4 (A) A      
+ -0.0000926923       2 (A) A       1 (A) A     ->    4 (A) A       3 (A) A      
+ -0.0000926923       1 (A) B       2 (A) B     ->    3 (A) B       4 (A) B      
+  0.0000926923       1 (A) B       2 (A) B     ->    4 (A) B       3 (A) B      
+  0.0000926923       2 (A) B       1 (A) B     ->    3 (A) B       4 (A) B      
+ -0.0000926923       2 (A) B       1 (A) B     ->    4 (A) B       3 (A) B      
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A)     -2.3460
+               2       Occ  Alpha       2 (A)     -0.3012
+               1       Occ  Beta        1 (A)     -2.3460
+               2       Occ  Beta        2 (A)     -0.3012
+               3       Vir  Alpha       3 (A)      0.0795
+               4       Vir  Alpha       4 (A)      0.1633
+               6       Vir  Alpha       6 (A)      0.5969
+               3       Vir  Beta        3 (A)      0.0795
+               4       Vir  Beta        4 (A)      0.1633
+               6       Vir  Beta        6 (A)      0.5969
+
+
+ EEs and amplitudes of EOMEE has be exported to fchk file
+Running a double precision version
+      EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      3         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      3     5.10e-04   3.8715   5.3358   5.3358   
+      1    0      6     1.58e-04   3.8708   5.3359   5.3359   
+      2    2      9     8.85e-06   3.8708   5.3359*  5.3359*  
+      3    3      10    1.72e-06   3.8708*  5.3359*  5.3359*  
+
+     Davidson procedure converged
+
+biorthogonolize_left_to_right(): degenerate block detected, ndeg=2
+
+ Excited state properties for  EOMEE-CCSD transition 1/A
+ Dipole moment (a.u.): 1.711893 (X 0.000000, Y 0.000000, Z 1.711893)
+ R-squared (a.u.): 22.624446 (XX 4.296344, YY 4.296344, ZZ 14.031757)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 2.000000, Tr(BB) 2.000000
+
+ Excited state properties for  EOMEE-CCSD transition 2/A
+ Dipole moment (a.u.): 0.075907 (X 0.000000, Y 0.000000, Z 0.075907)
+ R-squared (a.u.): 20.238627 (XX 5.867210, YY 5.867208, ZZ 8.504208)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 2.000000, Tr(BB) 2.000000
+
+ Excited state properties for  EOMEE-CCSD transition 3/A
+ Dipole moment (a.u.): 0.075907 (X 0.000000, Y 0.000000, Z 0.075907)
+ R-squared (a.u.): 20.238627 (XX 5.867208, YY 5.867210, ZZ 8.504208)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 2.000000, Tr(BB) 2.000000
+
+        Solving for EOMEE-CCSD A triplet states.
+
+Running a double precision version
+        EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using standard  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      3         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      3     2.00e-02   4.5765   5.5181   5.5181   
+      1    0      6     1.15e-02   3.5711   4.8093   4.8093   
+      2    0      9     4.92e-04   3.4519   4.6903   4.6903   
+      3    0      12    4.04e-05   3.4476   4.6890   4.6890   
+      4    3      15    3.21e-07   3.4470*  4.6900*  4.6900*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/A
+ Total energy = -7.75176914 a.u.  Excitation energy = 3.44703667 eV.
+ R0^2 = 0.0000  R1^2 = 0.9533  R2^2 = 0.0467  Res^2 = 3.17e-07
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.6846904212       2 (A) A                   ->    3 (A) A                    
+ -0.6846904212       2 (A) B                   ->    3 (A) B                    
+ -0.0885812317       2 (A) A                   ->    6 (A) A                    
+  0.0885812317       2 (A) B                   ->    6 (A) B                    
+  0.0039348170       1 (A) A                   ->    3 (A) A                    
+ -0.0039348170       1 (A) B                   ->    3 (A) B                    
+  0.0014440552       1 (A) A                   ->    6 (A) A                    
+ -0.0014440552       1 (A) B                   ->    6 (A) B                    
+ -0.1524746580       2 (A) A       2 (A) B     ->    3 (A) A       6 (A) B      
+  0.1524746580       2 (A) A       2 (A) B     ->    6 (A) A       3 (A) B      
+  0.1524746580       2 (A) A       2 (A) B     ->    6 (A) B       3 (A) A      
+ -0.1524746580       2 (A) A       2 (A) B     ->    3 (A) B       6 (A) A      
+  0.1524746580       2 (A) B       2 (A) A     ->    3 (A) A       6 (A) B      
+ -0.1524746580       2 (A) B       2 (A) A     ->    6 (A) A       3 (A) B      
+  0.1524746580       2 (A) B       2 (A) A     ->    3 (A) B       6 (A) A      
+ -0.1524746580       2 (A) B       2 (A) A     ->    6 (A) B       3 (A) A      
+  0.0048808223       1 (A) A       2 (A) B     ->    3 (A) A       3 (A) B      
+ -0.0048808223       2 (A) A       1 (A) B     ->    3 (A) A       3 (A) B      
+ -0.0048808223       1 (A) A       2 (A) B     ->    3 (A) B       3 (A) A      
+  0.0048808223       2 (A) A       1 (A) B     ->    3 (A) B       3 (A) A      
+ -0.0048808223       2 (A) B       1 (A) A     ->    3 (A) A       3 (A) B      
+  0.0048808223       1 (A) B       2 (A) A     ->    3 (A) A       3 (A) B      
+ -0.0048808223       1 (A) B       2 (A) A     ->    3 (A) B       3 (A) A      
+  0.0048808223       2 (A) B       1 (A) A     ->    3 (A) B       3 (A) A      
+  0.0044182072       1 (A) A       2 (A) B     ->    6 (A) A       3 (A) B      
+ -0.0044182072       2 (A) A       1 (A) B     ->    3 (A) A       6 (A) B      
+ -0.0044182072       1 (A) A       2 (A) B     ->    3 (A) B       6 (A) A      
+  0.0044182072       2 (A) A       1 (A) B     ->    6 (A) B       3 (A) A      
+ -0.0044182072       2 (A) B       1 (A) A     ->    6 (A) A       3 (A) B      
+  0.0044182072       1 (A) B       2 (A) A     ->    3 (A) A       6 (A) B      
+ -0.0044182072       1 (A) B       2 (A) A     ->    6 (A) B       3 (A) A      
+  0.0044182072       2 (A) B       1 (A) A     ->    3 (A) B       6 (A) A      
+  0.0039350307       1 (A) A       2 (A) A     ->    3 (A) A       6 (A) A      
+ -0.0039350307       1 (A) A       2 (A) A     ->    6 (A) A       3 (A) A      
+ -0.0039350307       2 (A) A       1 (A) A     ->    3 (A) A       6 (A) A      
+  0.0039350307       2 (A) A       1 (A) A     ->    6 (A) A       3 (A) A      
+ -0.0039350307       1 (A) B       2 (A) B     ->    3 (A) B       6 (A) B      
+  0.0039350307       1 (A) B       2 (A) B     ->    6 (A) B       3 (A) B      
+  0.0039350307       2 (A) B       1 (A) B     ->    3 (A) B       6 (A) B      
+ -0.0039350307       2 (A) B       1 (A) B     ->    6 (A) B       3 (A) B      
+  0.0033743532       1 (A) A       2 (A) B     ->    5 (A) A       5 (A) B      
+ -0.0033743532       2 (A) A       1 (A) B     ->    5 (A) A       5 (A) B      
+ -0.0033743532       1 (A) A       2 (A) B     ->    5 (A) B       5 (A) A      
+  0.0033743532       2 (A) A       1 (A) B     ->    5 (A) B       5 (A) A      
+ -0.0033743532       2 (A) B       1 (A) A     ->    5 (A) A       5 (A) B      
+  0.0033743532       1 (A) B       2 (A) A     ->    5 (A) A       5 (A) B      
+ -0.0033743532       1 (A) B       2 (A) A     ->    5 (A) B       5 (A) A      
+  0.0033743532       2 (A) B       1 (A) A     ->    5 (A) B       5 (A) A      
+  0.0033743532       1 (A) A       2 (A) B     ->    4 (A) A       4 (A) B      
+ -0.0033743532       2 (A) A       1 (A) B     ->    4 (A) A       4 (A) B      
+ -0.0033743532       1 (A) A       2 (A) B     ->    4 (A) B       4 (A) A      
+  0.0033743532       2 (A) A       1 (A) B     ->    4 (A) B       4 (A) A      
+ -0.0033743532       2 (A) B       1 (A) A     ->    4 (A) A       4 (A) B      
+  0.0033743532       1 (A) B       2 (A) A     ->    4 (A) A       4 (A) B      
+ -0.0033743532       1 (A) B       2 (A) A     ->    4 (A) B       4 (A) A      
+  0.0033743532       2 (A) B       1 (A) A     ->    4 (A) B       4 (A) A      
+  0.0017316745       1 (A) A       2 (A) B     ->    3 (A) A       6 (A) B      
+ -0.0017316745       2 (A) A       1 (A) B     ->    6 (A) A       3 (A) B      
+ -0.0017316745       1 (A) A       2 (A) B     ->    6 (A) B       3 (A) A      
+  0.0017316745       2 (A) A       1 (A) B     ->    3 (A) B       6 (A) A      
+ -0.0017316745       2 (A) B       1 (A) A     ->    3 (A) A       6 (A) B      
+  0.0017316745       1 (A) B       2 (A) A     ->    6 (A) A       3 (A) B      
+ -0.0017316745       1 (A) B       2 (A) A     ->    3 (A) B       6 (A) A      
+  0.0017316745       2 (A) B       1 (A) A     ->    6 (A) B       3 (A) A      
+  0.0011823080       1 (A) A       1 (A) B     ->    3 (A) A       6 (A) B      
+ -0.0011823080       1 (A) A       1 (A) B     ->    6 (A) A       3 (A) B      
+ -0.0011823080       1 (A) A       1 (A) B     ->    6 (A) B       3 (A) A      
+  0.0011823080       1 (A) A       1 (A) B     ->    3 (A) B       6 (A) A      
+ -0.0011823080       1 (A) B       1 (A) A     ->    3 (A) A       6 (A) B      
+  0.0011823080       1 (A) B       1 (A) A     ->    6 (A) A       3 (A) B      
+ -0.0011823080       1 (A) B       1 (A) A     ->    3 (A) B       6 (A) A      
+  0.0011823080       1 (A) B       1 (A) A     ->    6 (A) B       3 (A) A      
+  0.0005537006       1 (A) A       2 (A) B     ->    6 (A) A       6 (A) B      
+ -0.0005537006       2 (A) A       1 (A) B     ->    6 (A) A       6 (A) B      
+ -0.0005537006       1 (A) A       2 (A) B     ->    6 (A) B       6 (A) A      
+  0.0005537006       2 (A) A       1 (A) B     ->    6 (A) B       6 (A) A      
+ -0.0005537006       2 (A) B       1 (A) A     ->    6 (A) A       6 (A) B      
+  0.0005537006       1 (A) B       2 (A) A     ->    6 (A) A       6 (A) B      
+ -0.0005537006       1 (A) B       2 (A) A     ->    6 (A) B       6 (A) A      
+  0.0005537006       2 (A) B       1 (A) A     ->    6 (A) B       6 (A) A      
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A)     -2.3460
+               2       Occ  Alpha       2 (A)     -0.3012
+               1       Occ  Beta        1 (A)     -2.3460
+               2       Occ  Beta        2 (A)     -0.3012
+               3       Vir  Alpha       3 (A)      0.0795
+               4       Vir  Alpha       4 (A)      0.1633
+               5       Vir  Alpha       5 (A)      0.1633
+               6       Vir  Alpha       6 (A)      0.5969
+               3       Vir  Beta        3 (A)      0.0795
+               4       Vir  Beta        4 (A)      0.1633
+               5       Vir  Beta        5 (A)      0.1633
+               6       Vir  Beta        6 (A)      0.5969
+
+
+ EOMEE transition 2/A
+ Total energy = -7.70609251 a.u.  Excitation energy = 4.68996073 eV.
+ R0^2 = 0.0000  R1^2 = 0.9402  R2^2 = 0.0598  Res^2 = 3.22e-07
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.6856313169       2 (A) A                   ->    5 (A) A                    
+ -0.6856313169       2 (A) B                   ->    5 (A) B                    
+  0.0014418736       1 (A) A                   ->    5 (A) A                    
+ -0.0014418736       1 (A) B                   ->    5 (A) B                    
+ -0.1436121316       2 (A) A       2 (A) B     ->    5 (A) A       6 (A) B      
+  0.1436121316       2 (A) A       2 (A) B     ->    6 (A) A       5 (A) B      
+  0.1436121316       2 (A) A       2 (A) B     ->    6 (A) B       5 (A) A      
+ -0.1436121316       2 (A) A       2 (A) B     ->    5 (A) B       6 (A) A      
+  0.1436121316       2 (A) B       2 (A) A     ->    5 (A) A       6 (A) B      
+ -0.1436121316       2 (A) B       2 (A) A     ->    6 (A) A       5 (A) B      
+  0.1436121316       2 (A) B       2 (A) A     ->    5 (A) B       6 (A) A      
+ -0.1436121316       2 (A) B       2 (A) A     ->    6 (A) B       5 (A) A      
+ -0.0960780774       2 (A) A       2 (A) B     ->    3 (A) A       5 (A) B      
+  0.0960780774       2 (A) A       2 (A) B     ->    5 (A) A       3 (A) B      
+  0.0960780774       2 (A) A       2 (A) B     ->    5 (A) B       3 (A) A      
+ -0.0960780774       2 (A) A       2 (A) B     ->    3 (A) B       5 (A) A      
+  0.0960780774       2 (A) B       2 (A) A     ->    3 (A) A       5 (A) B      
+ -0.0960780774       2 (A) B       2 (A) A     ->    5 (A) A       3 (A) B      
+  0.0960780774       2 (A) B       2 (A) A     ->    3 (A) B       5 (A) A      
+ -0.0960780774       2 (A) B       2 (A) A     ->    5 (A) B       3 (A) A      
+  0.0048857254       1 (A) A       2 (A) A     ->    5 (A) A       6 (A) A      
+ -0.0048857254       1 (A) A       2 (A) A     ->    6 (A) A       5 (A) A      
+ -0.0048857254       2 (A) A       1 (A) A     ->    5 (A) A       6 (A) A      
+  0.0048857254       2 (A) A       1 (A) A     ->    6 (A) A       5 (A) A      
+ -0.0048857254       1 (A) B       2 (A) B     ->    5 (A) B       6 (A) B      
+  0.0048857254       1 (A) B       2 (A) B     ->    6 (A) B       5 (A) B      
+  0.0048857254       2 (A) B       1 (A) B     ->    5 (A) B       6 (A) B      
+ -0.0048857254       2 (A) B       1 (A) B     ->    6 (A) B       5 (A) B      
+  0.0034480338       1 (A) A       2 (A) B     ->    3 (A) A       5 (A) B      
+ -0.0034480338       2 (A) A       1 (A) B     ->    5 (A) A       3 (A) B      
+ -0.0034480338       1 (A) A       2 (A) B     ->    5 (A) B       3 (A) A      
+  0.0034480338       2 (A) A       1 (A) B     ->    3 (A) B       5 (A) A      
+ -0.0034480338       2 (A) B       1 (A) A     ->    3 (A) A       5 (A) B      
+  0.0034480338       1 (A) B       2 (A) A     ->    5 (A) A       3 (A) B      
+ -0.0034480338       1 (A) B       2 (A) A     ->    3 (A) B       5 (A) A      
+  0.0034480338       2 (A) B       1 (A) A     ->    5 (A) B       3 (A) A      
+  0.0029412226       1 (A) A       2 (A) B     ->    5 (A) A       3 (A) B      
+ -0.0029412226       2 (A) A       1 (A) B     ->    3 (A) A       5 (A) B      
+ -0.0029412226       1 (A) A       2 (A) B     ->    3 (A) B       5 (A) A      
+  0.0029412226       2 (A) A       1 (A) B     ->    5 (A) B       3 (A) A      
+ -0.0029412226       2 (A) B       1 (A) A     ->    5 (A) A       3 (A) B      
+  0.0029412226       1 (A) B       2 (A) A     ->    3 (A) A       5 (A) B      
+ -0.0029412226       1 (A) B       2 (A) A     ->    5 (A) B       3 (A) A      
+  0.0029412226       2 (A) B       1 (A) A     ->    3 (A) B       5 (A) A      
+  0.0018984277       1 (A) A       1 (A) B     ->    3 (A) A       5 (A) B      
+ -0.0018984277       1 (A) A       1 (A) B     ->    5 (A) A       3 (A) B      
+ -0.0018984277       1 (A) A       1 (A) B     ->    5 (A) B       3 (A) A      
+  0.0018984277       1 (A) A       1 (A) B     ->    3 (A) B       5 (A) A      
+ -0.0018984277       1 (A) B       1 (A) A     ->    3 (A) A       5 (A) B      
+  0.0018984277       1 (A) B       1 (A) A     ->    5 (A) A       3 (A) B      
+ -0.0018984277       1 (A) B       1 (A) A     ->    3 (A) B       5 (A) A      
+  0.0018984277       1 (A) B       1 (A) A     ->    5 (A) B       3 (A) A      
+  0.0013102429       1 (A) A       2 (A) B     ->    6 (A) A       5 (A) B      
+ -0.0013102429       2 (A) A       1 (A) B     ->    5 (A) A       6 (A) B      
+ -0.0013102429       1 (A) A       2 (A) B     ->    5 (A) B       6 (A) A      
+  0.0013102429       2 (A) A       1 (A) B     ->    6 (A) B       5 (A) A      
+ -0.0013102429       2 (A) B       1 (A) A     ->    6 (A) A       5 (A) B      
+  0.0013102429       1 (A) B       2 (A) A     ->    5 (A) A       6 (A) B      
+ -0.0013102429       1 (A) B       2 (A) A     ->    6 (A) B       5 (A) A      
+  0.0013102429       2 (A) B       1 (A) A     ->    5 (A) B       6 (A) A      
+  0.0012695842       1 (A) A       1 (A) B     ->    5 (A) A       6 (A) B      
+ -0.0012695842       1 (A) A       1 (A) B     ->    6 (A) A       5 (A) B      
+ -0.0012695842       1 (A) A       1 (A) B     ->    6 (A) B       5 (A) A      
+  0.0012695842       1 (A) A       1 (A) B     ->    5 (A) B       6 (A) A      
+ -0.0012695842       1 (A) B       1 (A) A     ->    5 (A) A       6 (A) B      
+  0.0012695842       1 (A) B       1 (A) A     ->    6 (A) A       5 (A) B      
+ -0.0012695842       1 (A) B       1 (A) A     ->    5 (A) B       6 (A) A      
+  0.0012695842       1 (A) B       1 (A) A     ->    6 (A) B       5 (A) A      
+  0.0006842004       1 (A) A       2 (A) A     ->    3 (A) A       5 (A) A      
+ -0.0006842004       1 (A) A       2 (A) A     ->    5 (A) A       3 (A) A      
+ -0.0006842004       2 (A) A       1 (A) A     ->    3 (A) A       5 (A) A      
+  0.0006842004       2 (A) A       1 (A) A     ->    5 (A) A       3 (A) A      
+ -0.0006842004       1 (A) B       2 (A) B     ->    3 (A) B       5 (A) B      
+  0.0006842004       1 (A) B       2 (A) B     ->    5 (A) B       3 (A) B      
+  0.0006842004       2 (A) B       1 (A) B     ->    3 (A) B       5 (A) B      
+ -0.0006842004       2 (A) B       1 (A) B     ->    5 (A) B       3 (A) B      
+ -0.0006051409       1 (A) A       2 (A) B     ->    5 (A) A       6 (A) B      
+  0.0006051409       2 (A) A       1 (A) B     ->    6 (A) A       5 (A) B      
+  0.0006051409       1 (A) A       2 (A) B     ->    6 (A) B       5 (A) A      
+ -0.0006051409       2 (A) A       1 (A) B     ->    5 (A) B       6 (A) A      
+  0.0006051409       2 (A) B       1 (A) A     ->    5 (A) A       6 (A) B      
+ -0.0006051409       1 (A) B       2 (A) A     ->    6 (A) A       5 (A) B      
+  0.0006051409       1 (A) B       2 (A) A     ->    5 (A) B       6 (A) A      
+ -0.0006051409       2 (A) B       1 (A) A     ->    6 (A) B       5 (A) A      
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A)     -2.3460
+               2       Occ  Alpha       2 (A)     -0.3012
+               1       Occ  Beta        1 (A)     -2.3460
+               2       Occ  Beta        2 (A)     -0.3012
+               3       Vir  Alpha       3 (A)      0.0795
+               5       Vir  Alpha       5 (A)      0.1633
+               6       Vir  Alpha       6 (A)      0.5969
+               3       Vir  Beta        3 (A)      0.0795
+               5       Vir  Beta        5 (A)      0.1633
+               6       Vir  Beta        6 (A)      0.5969
+
+
+ EOMEE transition 3/A
+ Total energy = -7.70609251 a.u.  Excitation energy = 4.68996074 eV.
+ R0^2 = 0.0000  R1^2 = 0.9402  R2^2 = 0.0598  Res^2 = 3.22e-07
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.6856313169       2 (A) A                   ->    4 (A) A                    
+  0.6856313169       2 (A) B                   ->    4 (A) B                    
+ -0.0014418736       1 (A) A                   ->    4 (A) A                    
+  0.0014418736       1 (A) B                   ->    4 (A) B                    
+  0.1436121316       2 (A) A       2 (A) B     ->    4 (A) A       6 (A) B      
+ -0.1436121316       2 (A) A       2 (A) B     ->    6 (A) A       4 (A) B      
+ -0.1436121316       2 (A) A       2 (A) B     ->    6 (A) B       4 (A) A      
+  0.1436121316       2 (A) A       2 (A) B     ->    4 (A) B       6 (A) A      
+ -0.1436121316       2 (A) B       2 (A) A     ->    4 (A) A       6 (A) B      
+  0.1436121316       2 (A) B       2 (A) A     ->    6 (A) A       4 (A) B      
+ -0.1436121316       2 (A) B       2 (A) A     ->    4 (A) B       6 (A) A      
+  0.1436121316       2 (A) B       2 (A) A     ->    6 (A) B       4 (A) A      
+  0.0960780774       2 (A) A       2 (A) B     ->    3 (A) A       4 (A) B      
+ -0.0960780774       2 (A) A       2 (A) B     ->    4 (A) A       3 (A) B      
+ -0.0960780774       2 (A) A       2 (A) B     ->    4 (A) B       3 (A) A      
+  0.0960780774       2 (A) A       2 (A) B     ->    3 (A) B       4 (A) A      
+ -0.0960780774       2 (A) B       2 (A) A     ->    3 (A) A       4 (A) B      
+  0.0960780774       2 (A) B       2 (A) A     ->    4 (A) A       3 (A) B      
+ -0.0960780774       2 (A) B       2 (A) A     ->    3 (A) B       4 (A) A      
+  0.0960780774       2 (A) B       2 (A) A     ->    4 (A) B       3 (A) A      
+ -0.0048857254       1 (A) A       2 (A) A     ->    4 (A) A       6 (A) A      
+  0.0048857254       1 (A) A       2 (A) A     ->    6 (A) A       4 (A) A      
+  0.0048857254       2 (A) A       1 (A) A     ->    4 (A) A       6 (A) A      
+ -0.0048857254       2 (A) A       1 (A) A     ->    6 (A) A       4 (A) A      
+  0.0048857254       1 (A) B       2 (A) B     ->    4 (A) B       6 (A) B      
+ -0.0048857254       1 (A) B       2 (A) B     ->    6 (A) B       4 (A) B      
+ -0.0048857254       2 (A) B       1 (A) B     ->    4 (A) B       6 (A) B      
+  0.0048857254       2 (A) B       1 (A) B     ->    6 (A) B       4 (A) B      
+ -0.0034480338       1 (A) A       2 (A) B     ->    3 (A) A       4 (A) B      
+  0.0034480338       2 (A) A       1 (A) B     ->    4 (A) A       3 (A) B      
+  0.0034480338       1 (A) A       2 (A) B     ->    4 (A) B       3 (A) A      
+ -0.0034480338       2 (A) A       1 (A) B     ->    3 (A) B       4 (A) A      
+  0.0034480338       2 (A) B       1 (A) A     ->    3 (A) A       4 (A) B      
+ -0.0034480338       1 (A) B       2 (A) A     ->    4 (A) A       3 (A) B      
+  0.0034480338       1 (A) B       2 (A) A     ->    3 (A) B       4 (A) A      
+ -0.0034480338       2 (A) B       1 (A) A     ->    4 (A) B       3 (A) A      
+ -0.0029412226       1 (A) A       2 (A) B     ->    4 (A) A       3 (A) B      
+  0.0029412226       2 (A) A       1 (A) B     ->    3 (A) A       4 (A) B      
+  0.0029412226       1 (A) A       2 (A) B     ->    3 (A) B       4 (A) A      
+ -0.0029412226       2 (A) A       1 (A) B     ->    4 (A) B       3 (A) A      
+  0.0029412226       2 (A) B       1 (A) A     ->    4 (A) A       3 (A) B      
+ -0.0029412226       1 (A) B       2 (A) A     ->    3 (A) A       4 (A) B      
+  0.0029412226       1 (A) B       2 (A) A     ->    4 (A) B       3 (A) A      
+ -0.0029412226       2 (A) B       1 (A) A     ->    3 (A) B       4 (A) A      
+ -0.0018984277       1 (A) A       1 (A) B     ->    3 (A) A       4 (A) B      
+  0.0018984277       1 (A) A       1 (A) B     ->    4 (A) A       3 (A) B      
+  0.0018984277       1 (A) A       1 (A) B     ->    4 (A) B       3 (A) A      
+ -0.0018984277       1 (A) A       1 (A) B     ->    3 (A) B       4 (A) A      
+  0.0018984277       1 (A) B       1 (A) A     ->    3 (A) A       4 (A) B      
+ -0.0018984277       1 (A) B       1 (A) A     ->    4 (A) A       3 (A) B      
+  0.0018984277       1 (A) B       1 (A) A     ->    3 (A) B       4 (A) A      
+ -0.0018984277       1 (A) B       1 (A) A     ->    4 (A) B       3 (A) A      
+ -0.0013102429       1 (A) A       2 (A) B     ->    6 (A) A       4 (A) B      
+  0.0013102429       2 (A) A       1 (A) B     ->    4 (A) A       6 (A) B      
+  0.0013102429       1 (A) A       2 (A) B     ->    4 (A) B       6 (A) A      
+ -0.0013102429       2 (A) A       1 (A) B     ->    6 (A) B       4 (A) A      
+  0.0013102429       2 (A) B       1 (A) A     ->    6 (A) A       4 (A) B      
+ -0.0013102429       1 (A) B       2 (A) A     ->    4 (A) A       6 (A) B      
+  0.0013102429       1 (A) B       2 (A) A     ->    6 (A) B       4 (A) A      
+ -0.0013102429       2 (A) B       1 (A) A     ->    4 (A) B       6 (A) A      
+ -0.0012695842       1 (A) A       1 (A) B     ->    4 (A) A       6 (A) B      
+  0.0012695842       1 (A) A       1 (A) B     ->    6 (A) A       4 (A) B      
+  0.0012695842       1 (A) A       1 (A) B     ->    6 (A) B       4 (A) A      
+ -0.0012695842       1 (A) A       1 (A) B     ->    4 (A) B       6 (A) A      
+  0.0012695842       1 (A) B       1 (A) A     ->    4 (A) A       6 (A) B      
+ -0.0012695842       1 (A) B       1 (A) A     ->    6 (A) A       4 (A) B      
+  0.0012695842       1 (A) B       1 (A) A     ->    4 (A) B       6 (A) A      
+ -0.0012695842       1 (A) B       1 (A) A     ->    6 (A) B       4 (A) A      
+ -0.0006842004       1 (A) A       2 (A) A     ->    3 (A) A       4 (A) A      
+  0.0006842004       1 (A) A       2 (A) A     ->    4 (A) A       3 (A) A      
+  0.0006842004       2 (A) A       1 (A) A     ->    3 (A) A       4 (A) A      
+ -0.0006842004       2 (A) A       1 (A) A     ->    4 (A) A       3 (A) A      
+  0.0006842004       1 (A) B       2 (A) B     ->    3 (A) B       4 (A) B      
+ -0.0006842004       1 (A) B       2 (A) B     ->    4 (A) B       3 (A) B      
+ -0.0006842004       2 (A) B       1 (A) B     ->    3 (A) B       4 (A) B      
+  0.0006842004       2 (A) B       1 (A) B     ->    4 (A) B       3 (A) B      
+  0.0006051409       1 (A) A       2 (A) B     ->    4 (A) A       6 (A) B      
+ -0.0006051409       2 (A) A       1 (A) B     ->    6 (A) A       4 (A) B      
+ -0.0006051409       1 (A) A       2 (A) B     ->    6 (A) B       4 (A) A      
+  0.0006051409       2 (A) A       1 (A) B     ->    4 (A) B       6 (A) A      
+ -0.0006051409       2 (A) B       1 (A) A     ->    4 (A) A       6 (A) B      
+  0.0006051409       1 (A) B       2 (A) A     ->    6 (A) A       4 (A) B      
+ -0.0006051409       1 (A) B       2 (A) A     ->    4 (A) B       6 (A) A      
+  0.0006051409       2 (A) B       1 (A) A     ->    6 (A) B       4 (A) A      
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A)     -2.3460
+               2       Occ  Alpha       2 (A)     -0.3012
+               1       Occ  Beta        1 (A)     -2.3460
+               2       Occ  Beta        2 (A)     -0.3012
+               3       Vir  Alpha       3 (A)      0.0795
+               4       Vir  Alpha       4 (A)      0.1633
+               6       Vir  Alpha       6 (A)      0.5969
+               3       Vir  Beta        3 (A)      0.0795
+               4       Vir  Beta        4 (A)      0.1633
+               6       Vir  Beta        6 (A)      0.5969
+
+
+ EEs and amplitudes of EOMEE has be exported to fchk file
+Running a double precision version
+      EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      3         120       60        1         1.00e-05  0.00e+00  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      3     1.76e-04   3.4470   4.6900   4.6900   
+      1    0      6     1.04e-04   3.4470   4.6900   4.6900   
+      2    3      9     5.97e-06   3.4470*  4.6900*  4.6900*  
+
+     Davidson procedure converged
+
+biorthogonolize_left_to_right(): degenerate block detected, ndeg=2
+
+ Excited state properties for  EOMEE-CCSD transition 1/A
+ Dipole moment (a.u.): 1.575201 (X 0.000000, Y 0.000000, Z 1.575201)
+ R-squared (a.u.): 22.694783 (XX 4.935617, YY 4.935617, ZZ 12.823548)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 2.000000, Tr(BB) 2.000000
+
+ Excited state properties for  EOMEE-CCSD transition 2/A
+ Dipole moment (a.u.): 0.121020 (X 0.000000, Y 0.000000, Z 0.121020)
+ R-squared (a.u.): 20.418383 (XX 6.015353, YY 6.015360, ZZ 8.387670)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 2.000000, Tr(BB) 2.000000
+
+ Excited state properties for  EOMEE-CCSD transition 3/A
+ Dipole moment (a.u.): 0.121020 (X 0.000000, Y 0.000000, Z 0.121020)
+ R-squared (a.u.): 20.418383 (XX 6.015360, YY 6.015353, ZZ 8.387670)
+ Gauge origin (a.u.): (0.000000, 0.000000, 0.000000)
+ Angular momentum (a.u.) against gauge origin: 
+ (X 0.000000i, Y 0.000000i, Z 0.000000i)
+ Traces of the OPDMs: Tr(AA) 2.000000, Tr(BB) 2.000000
+
+ EOMEE-CCSD calculation:   CPU 2.23 s  wall 1.53 s
+
+ Total ccman2 time:   CPU 3.05 s  wall 2.00 s
+
+
+ --------------------------------------------------------------
+
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+
+ Alpha MOs
+ -- Occupied --
+ -2.3460  -0.3012
+ -- Virtual --
+  0.0795   0.1633   0.1633   0.5969
+ --------------------------------------------------------------
+
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 Li                   -0.019989
+      2 H                     0.019989
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                -0.0000
+    Dipole Moment (Debye)
+         X       0.0000      Y       0.0000      Z      -4.6465
+       Tot       4.6465
+    Quadrupole Moments (Debye-Ang)
+        XX      -5.3711     XY      -0.0000     YY      -5.3711
+        XZ       0.0000     YZ       0.0000     ZZ      -5.2202
+    Octopole Moments (Debye-Ang^2)
+       XXX       0.0000    XXY       0.0000    XYY       0.0000
+       YYY       0.0000    XXZ      -3.2119    XYZ       0.0000
+       YYZ      -3.2119    XZZ       0.0000    YZZ       0.0000
+       ZZZ      -9.3584
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX     -12.9998   XXXY      -0.0000   XXYY      -4.3333
+      XYYY      -0.0000   YYYY     -12.9998   XXXZ       0.0000
+      XXYZ       0.0000   XYYZ       0.0000   YYYZ       0.0000
+      XXZZ      -5.7032   XYZZ      -0.0000   YYZZ      -5.7032
+      XZZZ       0.0000   YZZZ       0.0000   ZZZZ     -21.4548
+ -----------------------------------------------------------------
+ Total job time:  3.93s(wall), 5.98s(cpu) 
+ Thu Aug 11 11:27:44 2022
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+

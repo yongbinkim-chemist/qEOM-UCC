@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -q batch
+#PBS -N test
+#PBS -o test.stdout
+#PBS -e test.error
+#PBS -W umask=022
+#PBS -l nodes=1:ppn=1
+#PBS -l mem=2000MB
+#PBS -m abe
+ 
+#QCHEM VARIABLES
+QC=/home/users/yongbin/software/yongbin_quantum; export QC
+MKL_NUM_THREADS=1; export MKL_NUM_THREADS
+QCAUX=/qcsoftware/qcaux_latest; export QCAUX
+if [ -e $QC/bin/qchem.setup.sh ] ; then
+   . $QC/bin/qchem.setup.sh
+fi
+#END QCHEM VARIABLES
+ 
+cd /home/users/yongbin/project/h2/eom-ccsd/6-31g/1.2 
+export QCSCRATCH=/scratch/yongbin
+hostname
+export HOST="`hostnamectl --transient`"
+qchem  test_qis.inp test_qis.inp.out

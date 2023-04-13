@@ -1,0 +1,24 @@
+$comment
+Hydrogen molecule
+$end
+
+$molecule
+0 1
+  Li        0.0000000000    0.0000000000    0.0000000000
+  H         0.0000000000    0.0000000000    1.0000000000
+$end
+
+$rem
+   n_frozen_core = 0
+   print_qis = true
+   BASIS                = sto-3g
+   SYMMETRY             = false
+   CC_SYMMETRY          = false
+   METHOD               = eom-ccsd
+   EE_SINGLETS          = [3]  ! Compute two EOM-EE singlet excited states
+   EE_TRIPLETS          = [3]  ! Compute two EOM-EE triplet excited states
+   CC_REF_PROP          = true ! Compute ground state properties
+   CC_EOM_PROP          = true ! Compute excited state properties
+   CC_OSFNO             = true
+   GUI                  = 2
+$end                  

@@ -1,0 +1,33 @@
+$comment
+Water molecule
+$end
+
+$molecule
+0 1
+  H    0.5355326   -0.0489506    0.7341984
+  O    0.0563012    0.0114119   -0.1303093
+  H   -0.9024750   -0.0253772    0.1144725
+$end
+
+$rem   
+!   n_frozen_core = 0
+!   print_qis = true
+   JOBTYPE              = opt
+   BASIS                = sto-3g
+   SYMMETRY             = false
+   CC_SYMMETRY          = false
+   METHOD               = ccsd 
+!   EE_SINGLETS          = [5]  ! Compute two EOM-EE singlet excited states
+!   EE_TRIPLETS          = [5]  ! Compute two EOM-EE triplet excited states
+!   CC_REF_PROP          = true ! Compute ground state properties
+!   CC_EOM_PROP          = true ! Compute excited state properties
+!   CC_OSFNO             = true 
+   GUI                  = 2
+$end
+
+$opt
+CONSTRAINT
+stre  1  2  1.6 
+stre  2  3  1.6
+ENDCONSTRAINT
+$end
