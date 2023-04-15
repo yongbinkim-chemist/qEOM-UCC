@@ -38,7 +38,7 @@ How to cite
 When using qEOM-Davidson for research projects, please cite:
 
     Yongbin Kim and Anna I. Krylov.
-    *Two algorithms for quantum solvers targeting excited states: theory and application to EOM-UCCSD*.
+    *Two algorithms for excited-states quantum solvers: Theory and application to EOM-UCCSD*.
     `arXiv:xxx.xxxx <https://arxiv.org/abs/as soon as>`__. 2023.
 
 ,
