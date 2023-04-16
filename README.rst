@@ -19,8 +19,8 @@ To use qEOM-UCC/Davidson:
 
 .. code-block:: bash
 
-  git clone https://github.com/yongbinkim-chemist/qEOM-Davidson.git
-  cd qEOM-Davidson
+  git clone https://github.com/yongbinkim-chemist/qEOM-UCC.git
+  cd qEOM-UCC
   python -m pip install -e .
 
 PyPI releases soon to be available.
